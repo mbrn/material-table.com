@@ -5,21 +5,24 @@ import LibzyConfig from '../../../libzy.config';
 import { UnControlled as CodeMirror } from 'react-codemirror2'
 import 'codemirror/mode/javascript/javascript'
 import 'codemirror/mode/jsx/jsx'
+import { LiveProvider, LiveEditor } from 'react-live';
+
 
 export default {
   h1: (props) => <div>
     <Typography
-      variant="h4" {...props} />
+      variant="h4" {...props} 
+      style={{ color: '#65819D' }}
+    />
     <div style={{
       width: 50,
       borderBottom: '4px solid ' + LibzyConfig.theme.palette.primary.main,
       borderRadius: 4
     }}></div>
     <br />
-    <br />
   </div>,
-  h2: (props) => <div><Typography variant="h5" {...props} /><br /></div>,
-  p: (props) => <div><Typography variant="subtitle1" {...props} style={{ color: '#65819D' }} /><br /></div>,
+  h2: (props) => <div><Typography variant="h5" style={{ color: '#65819D' }} {...props} /></div>,
+  p: (props) => <div><Typography variant="subtitle2" {...props} style={{ color: '#65819D' }} /><br /></div>,
   ul: (props) => <List>{props.children}</List>,
   li: (props) => (
     <ListItem>
@@ -79,9 +82,9 @@ export default {
     {props.children}
   </thead>,
   th: (props) => <th style={{ padding: 10 }}><Typography variant="subtitle1" style={{ color: '#65819D' }}>{props.children}</Typography></th>,
-  tbody: (props) => <tbody style={{ backgroundColor: '#f9f9f9' }}>{props.children}</tbody>,
+  tbody: (props) => <tbody style={{ backgroundColor: '#f9f9f999' }}>{props.children}</tbody>,
   tr: (props) => <tr>{props.children}</tr>,
-  td: (props) => <td style={{ padding: 5, textAlign: 'center' }} ><Typography variant="subtitle1" style={{ color: '#91A0B1' }}>{props.children}</Typography></td>,
+  td: (props) => <td style={{ padding: 5 }} ><Typography variant="subtitle2" style={{ color: '#65819D' }}>{props.children}</Typography></td>,
   inlineCode: (props) => <code
     style={{
       backgroundColor: 'rgb(239, 242, 247)',
@@ -118,28 +121,32 @@ export default {
       );
     }
     else if (props.className === "language-javascript") {
-      return <CodeMirror
-        value={props.children.trim()}
-        options={{
-          mode: 'javascript',
-          theme: 'lucario',
-          lineNumbers: false,
-          readOnly: true
-        }}
-        onChange={(editor, data, value) => {
-        }} />;
+      return (
+        <LiveProvider code={props.children.trim()} disabled language="javascript">
+          <LiveEditor
+            code={props.children.trim()}
+            style={{
+              backgroundColor: 'rgb(40, 44, 52)',
+              borderRadius: 5,
+              caretColor: 'white'
+            }}
+          />
+        </LiveProvider>
+      );
     }
     else if (props.className === "language-jsx") {
-      return <CodeMirror
-        value={props.children.trim()}
-        options={{
-          mode: 'jsx',
-          theme: 'lucario',
-          lineNumbers: false,
-          readOnly: true
-        }}
-        onChange={(editor, data, value) => {
-        }} />;
+      return (
+        <LiveProvider code={props.children.trim()} disabled language="jsx">
+          <LiveEditor
+            code={props.children.trim()}
+            style={{              
+              backgroundColor: 'rgb(40, 44, 52)',
+              borderRadius: 5,
+              caretColor: 'white'
+            }}
+          />
+        </LiveProvider>
+      );
     }
     else {
       return <div>{props.children}</div>;

@@ -25,7 +25,7 @@ class MainPageInner extends Component {
                   {feature.button &&
                     <div className={this.props.classes.featureActions}>
                       <Link to={feature.button.path} style={{ textDecoration: 'none' }}>
-                        <Button className={this.props.classes.featureButton} color="primary">{feature.button.text}</Button>
+                        <Button className={this.props.classes.featureButton}>{feature.button.text}</Button>
                       </Link>
                     </div>
                   }
@@ -99,6 +99,7 @@ const styles = theme => ({
   },
   featureButton: {
     textTransform: 'none',
+    color: '#65819D',
   }
 });
 

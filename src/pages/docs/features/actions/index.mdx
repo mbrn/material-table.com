@@ -1,1 +1,51 @@
-a
+import LiveCode from '../../../../components/live-code'
+import MaterialTable from 'material-table'
+
+# Actions
+
+You can add buttons to rows or toolbar by using actions prop. Actions prop takes array of actions. 
+
+## Usage 
+
+```jsx
+<MaterialTable
+  // other fields
+  actions={[
+    {
+      icon: 'save',
+      tooltip: 'Save User',
+      onClick: (event, rowData) => {
+        // Do save operation
+      }
+    }
+  ]}
+/>
+```
+
+<br/>
+
+## Action Fields
+
+Every action can have these fields:
+
+| Field         | Type                    | Default   | Description                                                                               |
+|:--------------|:------------------------|:----------|:------------------------------------------------------------------------------------------|
+| disabled      | boolean                 | false     | Button enabled/disabled                                                                   |
+| icon          | string or ReactElement  |           | Icon of button from material icons or custom component                                    |
+| iconProps     | object                  |           | Props for icon as IconProps from https://material-ui.com/api/icon/                        |
+| isFreeAction  | boolean                 | false     | Independent actions that will not on row' actions section                                 |
+| onClick       | func                    |           | This event will be fired when button clicked. Parameters are `event` and `row or rows`    |
+| tooltip       | string                  |           | Tooltip for button                                                                        |
+
+<br/>
+
+## Examples
+<br/>
+
+<LiveCode 
+  code={require('!!raw-loader!./simple-action.js').default}
+  scope={{MaterialTable}} 
+  title="Simple Action Example"
+  description="A simple action added to table. It fires an alert with name of current user when clicked"
+/>
+

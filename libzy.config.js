@@ -22,7 +22,7 @@ const treeData = require('./src/pages/docs/features/tree-data/index.mdx').defaul
 
 module.exports = {
   title: 'material-table',
-  subTitle: 'Datatable component that based on material-ui',
+  subTitle: 'React data table component that based on material-ui',
   github: 'https://github.com/mbrn/material-table',  
   menuTree: [
     {
@@ -268,10 +268,10 @@ module.exports = {
   theme: {
     palette: {
       primary: {
-        main: '#01579b'
+        main: '#00695c'
       },
       secondary: {
-        main: '#e65100',
+        main: '#f4511e',
       },
     }
   },

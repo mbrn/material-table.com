@@ -58,7 +58,8 @@ class Nav extends Component {
 
       if (this.props.location.pathname === "/" + path + "/" + item.path) {
         listItemTextStyle = {
-          fontWeight: 600
+          fontWeight: 600,
+          color: this.props.theme.palette.primary.main
         };
 
         listItemStyle.backgroundColor = lighten(this.props.theme.palette.primary.light, 0.85);
@@ -87,6 +88,7 @@ class Nav extends Component {
         key="NavListKey"
         component="nav"
         disablePadding
+        style={{padding: 5}}
       >
         {
           this.props.tree.map(item => {
@@ -105,6 +107,7 @@ const styles = (theme) => ({
   },
   listItemRoot: {
     color: '#65819D',
+    borderRadius: 5,
     borderBottomColor: theme.palette.background.paper,
     '&:hover': {
       backgroundColor: lighten(theme.palette.primary.light, 0.85)
