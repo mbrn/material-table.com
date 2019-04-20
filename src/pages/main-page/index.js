@@ -74,10 +74,10 @@ const styles = theme => ({
     },
   },
   features: {
-    margin: '10px 0px',
+    margin: '0px 0px',
   },
   feature: {
-    padding: '12px 5px',
+    padding: '15px 5px',
   },
   featureContent: {
     display: 'flex',
