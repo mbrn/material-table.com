@@ -1,7 +1,8 @@
 import CleanWebpackPlugin from 'clean-webpack-plugin';
+import CopyWebpackPlugin from 'copy-webpack-plugin';
+import path from 'path';
 
 import paths from './paths';
-import rules from './rules';
 
 module.exports = {
     mode: 'production',
@@ -14,9 +15,9 @@ module.exports = {
         new CleanWebpackPlugin({
           exclude: ['CNAME']
         }),
-        // new CleanWebpackPlugin([paths.outputPath.split('/').pop()], {
-        //     root: paths.root
-        // })
+        new CopyWebpackPlugin([
+          { from: path.resolve(paths.root, 'src', 'CNAME'), to: paths.outputPath}
+        ]),
     ],
     devtool: 'source-map'
 };
