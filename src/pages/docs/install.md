@@ -1,29 +1,21 @@
 # Installation
 
-## 1. Install libzy
+## 1.Install package
+To install material-table with `npm`:
 
 ```console
 npm install material-table --save
 ```
 
-## 2. Create a documentation project
+To install material-table with `yarn`:
 
 ```console
-libzy create
+yarn add material-table
 ```
 
-## 3. Configure project 
+## 2.Add material icons to your html
 
-Change `libzy.config.js` file with your project details. 
-
-## 4. Write your pages
-
-Add your `md`, `mdx`, `.js` files in src\pages folder. 
-
-## 5. Build and publish
-
-```console
-npm run build
+```html
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 ```
-
-Your single page application will be at `docs` folder.
+or use `icons` props to give icons to material-table

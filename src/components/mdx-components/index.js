@@ -11,7 +11,7 @@ import { LiveProvider, LiveEditor } from 'react-live';
 export default {
   h1: (props) => <div>
     <Typography
-      variant="h5" {...props} 
+      variant="h4" {...props} 
       style={{ color: '#65819D' }}
     />
     <div style={{
@@ -25,9 +25,9 @@ export default {
   p: (props) => <div><Typography variant="subtitle2" {...props} style={{ color: '#65819D' }} /><br /></div>,
   ul: (props) => <List>{props.children}</List>,
   li: (props) => (
-    <ListItem>
-      <ListItemIcon style={{ marginRight: 0, alignSelf: 'flex-start' }}><Icon style={{ color: '#65819D' }} iconSize="small">keyboard_arrow_right</Icon></ListItemIcon>
-      <ListItemText><Typography variant="subtitle2" {...props} style={{ color: '#65819D' }} /></ListItemText>
+    <ListItem dense style={{paddingTop: 4, paddingBottom: 4}}>
+      <ListItemIcon style={{ marginRight: 0, marginTop: 5, alignSelf: 'flex-start' }}><Icon style={{ color: '#65819D', fontSize:10 }} iconSize="small">brightness_1</Icon></ListItemIcon>
+      <ListItemText style={{paddingLeft: 8}}><Typography variant="subtitle2" {...props} style={{ color: '#65819D' }} /></ListItemText>
     </ListItem>
   ),
   a: (props) => {
@@ -120,9 +120,9 @@ export default {
         </div>
       );
     }
-    else if (props.className === "language-javascript") {
+    else {
       return (
-        <LiveProvider code={props.children.trim()} disabled language="javascript">
+        <LiveProvider code={props.children.trim()} disabled language={props.className.substr("language-".length)}>
           <LiveEditor
             code={props.children.trim()}
             style={{
@@ -133,23 +133,6 @@ export default {
           />
         </LiveProvider>
       );
-    }
-    else if (props.className === "language-jsx") {
-      return (
-        <LiveProvider code={props.children.trim()} disabled language="jsx">
-          <LiveEditor
-            code={props.children.trim()}
-            style={{              
-              backgroundColor: '#2b3e50',
-              borderRadius: 5,
-              caretColor: 'white'
-            }}
-          />
-        </LiveProvider>
-      );
-    }
-    else {
-      return <div>{props.children}</div>;
     }
   }
 }
