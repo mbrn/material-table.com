@@ -164,6 +164,6 @@ module.exports = {
     }
   },
   options: {
-    routerType: 'hash', // hash | browser
+    routerType: 'browser', // hash | browser
   }
 }
