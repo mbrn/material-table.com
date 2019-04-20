@@ -1,4 +1,4 @@
-class Counter extends React.Component {
+class SimpleAction extends React.Component {
   constructor() {
     super()
     this.state = { count: 0 }
@@ -17,6 +17,7 @@ class Counter extends React.Component {
   render() {
     return (
       <MaterialTable
+        title="Simple Action Preview"
         columns={[
           { title: 'Name', field: 'name' },
           { title: 'Surname', field: 'surname' },

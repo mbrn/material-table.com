@@ -40,12 +40,39 @@ Every action can have these fields:
 <br/>
 
 ## Examples
-<br/>
 
 <LiveCode 
   code={require('!!raw-loader!./simple-action.js').default}
   scope={{MaterialTable}} 
   title="Simple Action Example"
-  description="A simple action added to table. It fires an alert with name of current user when clicked"
+  description="A simple action added to table. It fires an alert with name of current user when clicked."
+/>
+
+<LiveCode 
+  code={require('!!raw-loader!./multiple-actions.js').default}
+  scope={{MaterialTable}} 
+  title="Multiple Actions Example"
+  description="You can add more that one actions."
+/>
+
+<LiveCode 
+  code={require('!!raw-loader!./conditional-actions.js').default}
+  scope={{MaterialTable}} 
+  title="Conditionals Actions Example"
+  description="You can set an action to disabled or change its color according to rowData. In example you can not delete users that has born after before 2000."
+/>
+
+<LiveCode 
+  code={require('!!raw-loader!./positioning-actions-column.js').default}
+  scope={{MaterialTable}} 
+  title="Positioning Actions Column Example"
+  description="You can change position of columns by setting options.actionsColumnIndex."
+/>
+
+<LiveCode 
+  code={require('!!raw-loader!./free-action.js').default}
+  scope={{MaterialTable}} 
+  title="Free Action Example"
+  description="You can add rowData independents actions to toolbar by setting isFreeAction as true."
 />
 

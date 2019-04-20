@@ -54,6 +54,7 @@ class LiveCodeInner extends Component {
 
 const styles = theme => ({
   root: {
+    marginTop: 10,
     padding: 10
   },
   topBar: {
