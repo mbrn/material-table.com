@@ -11,7 +11,9 @@ module.exports = {
         chunkFilename: '[name].[chunkhash].js'
     },
     plugins: [
-        new CleanWebpackPlugin(),
+        new CleanWebpackPlugin({
+          exclude: ['CNAME']
+        }),
         // new CleanWebpackPlugin([paths.outputPath.split('/').pop()], {
         //     root: paths.root
         // })
