@@ -11,7 +11,7 @@ import { LiveProvider, LiveEditor } from 'react-live';
 export default {
   h1: (props) => <div>
     <Typography
-      variant="h4" {...props} 
+      variant="h5" {...props} 
       style={{ color: '#65819D' }}
     />
     <div style={{
@@ -21,13 +21,13 @@ export default {
     }}></div>
     <br />
   </div>,
-  h2: (props) => <div><Typography variant="h5" style={{ color: '#65819D' }} {...props} /></div>,
+  h2: (props) => <div><Typography variant="h6" style={{ color: '#65819D' }} {...props} /></div>,
   p: (props) => <div><Typography variant="subtitle2" {...props} style={{ color: '#65819D' }} /><br /></div>,
   ul: (props) => <List>{props.children}</List>,
   li: (props) => (
     <ListItem>
       <ListItemIcon style={{ marginRight: 0, alignSelf: 'flex-start' }}><Icon style={{ color: '#65819D' }} iconSize="small">keyboard_arrow_right</Icon></ListItemIcon>
-      <ListItemText><Typography variant="subtitle1" {...props} style={{ color: '#65819D' }} /></ListItemText>
+      <ListItemText><Typography variant="subtitle2" {...props} style={{ color: '#65819D' }} /></ListItemText>
     </ListItem>
   ),
   a: (props) => {
@@ -102,7 +102,7 @@ export default {
             style={{
               padding: 10,
               color: '#DDD',
-              backgroundColor: 'rgb(40, 44, 52)',
+              backgroundColor: '#2b3e50',
               fontFamily: 'Inconsolata, Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace',
               fontSize: 16,
               whiteSpace: 'initial'
@@ -126,7 +126,7 @@ export default {
           <LiveEditor
             code={props.children.trim()}
             style={{
-              backgroundColor: 'rgb(40, 44, 52)',
+              backgroundColor: '#2b3e50',
               borderRadius: 5,
               caretColor: 'white'
             }}
@@ -140,7 +140,7 @@ export default {
           <LiveEditor
             code={props.children.trim()}
             style={{              
-              backgroundColor: 'rgb(40, 44, 52)',
+              backgroundColor: '#2b3e50',
               borderRadius: 5,
               caretColor: 'white'
             }}

@@ -75,7 +75,7 @@ const styles = theme => ({
   },
   code: {
     marginTop: 5,
-    backgroundColor: 'rgb(40, 44, 52)',
+    backgroundColor: '#2b3e50',
     borderRadius: 5,
     caretColor: 'white'
   },
