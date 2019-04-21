@@ -1,0 +1,131 @@
+import LiveCode from '../../../../components/live-code'
+import MaterialTable from 'material-table'
+import DetailPanelProps from '../../all-props/detail-panel.md'
+
+# Detail Panel
+
+You can add a detail panel to every row by using detailPanel feature.
+
+## Usages
+
+#### One detail panel as a functions
+
+If you neeed just one type of detail panel, you can just set a function that returns a React element. 
+
+```jsx
+<MaterialTable
+  // other props
+  detailPanel={rowData => {
+    return (
+      <iframe
+        width="100%"
+        height="315"
+        src="https://www.youtube.com/embed/C0DPdy98e4c"
+        frameborder="0"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      />
+    )
+  }}
+/>
+```
+
+#### One detail panel as a functions
+
+If you neeed more than one type of detail panel, you can set array of detailPanel objects. 
+
+```jsx
+<MaterialTable
+  // other props
+  detailPanel={[
+    {
+      tooltip: 'Show Name',
+      render: rowData => {
+        return (
+          <div
+            style={{
+              fontSize: 100,
+              textAlign: 'center',
+              color: 'white',
+              backgroundColor: '#43A047',
+            }}
+          >
+            {rowData.name}
+          </div>
+        )
+      },
+    },
+    {
+      icon: 'account_circle',
+      tooltip: 'Show Surname',
+      render: rowData => {
+        return (
+          <div
+            style={{
+              fontSize: 100,
+              textAlign: 'center',
+              color: 'white',
+              backgroundColor: '#E53935',
+            }}
+          >
+            {rowData.surname}
+          </div>
+        )
+      },
+    },
+    {
+      icon: 'favorite_border',
+      openIcon: 'favorite',
+      tooltip: 'Show Both',
+      render: rowData => {
+        return (
+          <div
+            style={{
+              fontSize: 100,
+              textAlign: 'center',
+              color: 'white',
+              backgroundColor: '#FDD835',
+            }}
+          >
+            {rowData.name} {rowData.surname}
+          </div>
+        )
+      },
+    },
+  ]}
+/>
+```
+
+<br/>
+
+## DetailPanel Fields
+
+Every action can have these fields:
+
+<DetailPanelProps/><br/>
+
+## Examples
+
+<LiveCode 
+  code={require('!!raw-loader!./one-detail-panel.js').default}
+  scope={{MaterialTable}} 
+  title="One Detail Panel Example"
+  description="A simple detail panel example that renders a youtube video in detail panel."
+/>
+
+<LiveCode 
+  code={require('!!raw-loader!./multiple-detail-panels.js').default}
+  scope={{MaterialTable}} 
+  title="Multiple Detail Panels Example"
+  description="A table example that has multiple detail panels. Every panel renders different data about row."
+/>
+
+<LiveCode 
+  code={require('!!raw-loader!./detail-panel-with-rowclick.js').default}
+  scope={{MaterialTable}} 
+  title="Detail Panel With RowClick  Example"
+  description="In this example, togglePanel function is being called in rowClick event."
+/>
+
+
+
