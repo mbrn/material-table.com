@@ -15,12 +15,22 @@ const theme = createMuiTheme({
     },
     MuiPaper: {
       elevation: 0
-    }    
+    },
+    MuiTypography: {
+      style: { 
+        color: '#65819D'
+      }
+    }
   },
   overrides: {
     MuiIcon: {
       root: {
         color: '#65819D'
+      }
+    },
+    MuiTypography: {
+      root: {
+        color: 'red'
       }
     }
   }

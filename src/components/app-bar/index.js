@@ -83,7 +83,7 @@ class LibzyAppBar extends React.Component {
               <MenuIcon />
             </IconButton>
             <Link to="/" style={{ textDecoration: 'none', color: 'white' }}>
-              <Typography className={classes.title} variant="h6" color="inherit" noWrap>
+              <Typography className={classes.title} variant="h6" noWrap style={{color: 'white'}}>
                 {LibzyConfig.title}
               </Typography>
             </Link>
