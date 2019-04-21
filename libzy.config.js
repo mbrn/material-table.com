@@ -257,10 +257,10 @@ module.exports = {
   theme: {
     palette: {
       primary: {
-        main: '#607d8b'
+        main: '#3f51b5'
       },
       secondary: {
-        main: '#ff5722',
+        main: '#f50057',
       },
     }
   },
