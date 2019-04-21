@@ -1,8 +1,8 @@
-class SimpleAction extends React.Component {
+class ToolbarOverriding extends React.Component {
   render() {
     return (
       <MaterialTable
-        title="Simple Action Preview"
+        title="Toolbar Overriding Preview"
         columns={[
           { title: 'Name', field: 'name' },
           { title: 'Surname', field: 'surname' },

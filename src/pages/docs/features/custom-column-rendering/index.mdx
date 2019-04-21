@@ -1,0 +1,38 @@
+import LiveCode from '../../../../components/live-code';
+import MaterialTable, { MTableToolbar } from 'material-table';
+import ComponentsProps from '../../all-props/components.md';
+
+# Custom Column Rendering
+
+material-table lets you to override a render of any column. For example, you can render an image instead of image url.
+
+## Usage
+
+In this usage developer changes backgroundColor of Toolbar component.
+
+```jsx
+import MaterialTable, { MTableToolbar } from 'material-table';
+
+<MaterialTable
+    // other props
+    columns={[
+      {
+        field: 'url',
+        Title: 'Avatar',
+        render: rowData => <img src={rowData.url} style={{width: 50, borderRadius: '50%'}}/>
+      }
+    ]}
+/>
+```
+
+<br />
+
+
+## Examples
+
+<LiveCode
+    code={require('!!raw-loader!./render-image.js').default}
+    scope={{ MaterialTable }}
+    title="Render Image Example"
+    description="In this example, image is being rendered instead of images' url"
+/>
