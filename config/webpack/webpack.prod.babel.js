@@ -1,8 +1,7 @@
 import CleanWebpackPlugin from 'clean-webpack-plugin';
-import CopyWebpackPlugin from 'copy-webpack-plugin';
-import path from 'path';
 
 import paths from './paths';
+import rules from './rules';
 
 module.exports = {
     mode: 'production',
@@ -12,12 +11,10 @@ module.exports = {
         chunkFilename: '[name].[chunkhash].js'
     },
     plugins: [
-        new CleanWebpackPlugin({
-          exclude: ['CNAME']
-        }),
-        new CopyWebpackPlugin([
-          { from: path.resolve(paths.root, 'src', 'CNAME'), to: paths.outputPath}
-        ]),
+        new CleanWebpackPlugin(),
+        // new CleanWebpackPlugin([paths.outputPath.split('/').pop()], {
+        //     root: paths.root
+        // })
     ],
     devtool: 'source-map'
 };
