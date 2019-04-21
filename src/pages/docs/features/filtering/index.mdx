@@ -1,0 +1,53 @@
+import LiveCode from '../../../../components/live-code';
+import MaterialTable from 'material-table';
+
+# Filtering
+
+material-table has inline filtering feature that lets users to filter every column separately.
+
+## Usage
+
+To make filtering available you must open filtering in options.
+
+```jsx
+import MaterialTable from 'material-table';
+
+<MaterialTable
+    // other props
+    options={{
+      filtering: true
+    }}
+/>
+```
+
+<br />
+
+## Hints 
+
+* You can add a default filter value to a column by setting `column.defaultFilter`
+* You can close filtering for any column by setting `column.filtering` as `false`
+* You can override filtering component with overriding `components.FilterRow`
+* You can change filter icon with overriding `icons.Filter`
+
+## Examples
+
+<LiveCode
+    code={require('!!raw-loader!./basic-filtering.js').default}
+    scope={{ MaterialTable }}
+    title="Basic Filtering Example"
+    description="To make filtering available options.filtering is being set as true"
+/>
+
+<LiveCode
+    code={require('!!raw-loader!./non-filtering-field.js').default}
+    scope={{ MaterialTable }}
+    title="Non Filtering Field Example"
+    description="name field marked as non-filter by setting filtering field of specified column as false"
+/>
+
+<LiveCode
+    code={require('!!raw-loader!./custom-filtering-algorithm.js').default}
+    scope={{ MaterialTable }}
+    title="Custom Filtering Algorithm Example"
+    description="Changing algorithm of filtering for name field. It expects length of cell data. Type 6 to find first row"
+/>
