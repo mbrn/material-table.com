@@ -1,8 +1,8 @@
-class FreeAction extends React.Component {
+class SimpleAction extends React.Component {
   render() {
     return (
       <MaterialTable
-        title="Free Action Preview"
+        title="Simple Action Preview"
         columns={[
           { title: 'Name', field: 'name' },
           { title: 'Surname', field: 'surname' },
@@ -16,15 +16,27 @@ class FreeAction extends React.Component {
         data={[
           { name: 'Mehmet', surname: 'Baran', birthYear: 1987, birthCity: 63 },
           { name: 'Zerya Betül', surname: 'Baran', birthYear: 2017, birthCity: 34 },
-        ]}        
+        ]}
         actions={[
           {
-            icon: 'add',
-            tooltip: 'Add User',
-            isFreeAction: true,
-            onClick: (event) => alert("You want to add a new row")
+            icon: 'save',
+            tooltip: 'Save User',
+            onClick: (event, rowData) => alert("You saved " + rowData.name)
           }
         ]}
+        components={{
+          Action: props => (
+            <Button
+              onClick={(event) => props.action.onClick(event, props.data)}
+              color="primary"
+              variant="contained"
+              style={{textTransform: 'none'}}
+              size="small"
+            >
+              My Button
+            </Button>
+          ),
+        }}
       />
     )
   }

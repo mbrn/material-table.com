@@ -1,1 +1,51 @@
-casd
+import LiveCode from '../../../../components/live-code';
+import MaterialTable, { MTableToolbar } from 'material-table';
+import { Button, Chip } from '@material-ui/core';
+import ComponentsProps from '../../all-props/components.md';
+
+# Component Overriding
+
+material-table has many components inside itself. You can change some of them according to your needs.
+
+## Usage
+
+In this usage developer changes backgroundColor of Toolbar component.
+
+```jsx
+import MaterialTable, { MTableToolbar } from 'material-table';
+
+<MaterialTable
+    // other props
+    components={{
+        Toolbar: props => (
+            <div style={{ backgroundColor: '#e8eaf5' }}>
+                <MTableToolbar {...props} />
+            </div>
+        )
+    }}
+/>;
+```
+
+<br />
+
+## List of Components
+
+You can override these components:
+
+<ComponentsProps/><br/>
+
+## Examples
+
+<LiveCode
+    code={require('!!raw-loader!./toolbar-overriding.js').default}
+    scope={{ MaterialTable, MTableToolbar, Chip }}
+    title="Toolbar Overriding Example"
+    description="In this example, a new line added to toolbar"
+/>
+
+<LiveCode
+    code={require('!!raw-loader!./action-overriding.js').default}
+    scope={{ MaterialTable, Button }}
+    title="Action Overriding Example"
+    description="In this example, table renders a normal button instead of icon button for an action"
+/>
