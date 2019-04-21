@@ -1,0 +1,77 @@
+import Actions from './actions.md'
+import Columns from './columns.md'
+import Components from './components.md'
+import DetailPanel from './detail-panel.md'
+import Icons from './icons.md'
+import Localization from './localization.md'
+import Options from './options.md'
+
+
+# All Props
+
+| Property            | Type                            | Default           | Description                                                       |
+|:--------------------|:--------------------------------|:------------------|:------------------------------------------------------------------|
+| actions             | Array                           |                   | Action list. An icon button will be rendered for each actions     |
+| columns             | Array                           |                   | Column definitions                                                |
+| components          | object                          |                   | Component customization                                           |
+| data                | Array or func for remote data   |                   | Data to be rendered                                               |
+| detailPanel         | func or array of detailPanel    |                   | Component(s) to be rendered on detail panel                       |
+| editable            | object                          |                   | object for add, update and delete functions                       |
+| icons               | object                          |                   | Icons customization                                               |
+| isLoading           | boolean                         | false             | Flag for loading animation                                        |
+| localization        | object                          |                   | All text for localization                                         |
+| onChangePage        | func                            |                   | To handle page changes (page)                                     |
+| onChangeRowsPerPage | func                            |                   | To handle rows per page changes (pageSize)                        |
+| onOrderChange       | func                            |                   | To handle order changes (orderedColumnId, orderDirection)         |
+| onRowClick          | func                            |                   | To handle row click (event, rowData)                              |
+| onSelectionChange   | func                            |                   | To handle selection changes                                       |
+| onTreeExpandChange  | func                            |                   | To handle tree data rows expand changes                           |
+| options             | object                          |                   | All options of table                                              |
+| parentChildData     | func                            |                   | Func that makes table parent-child table                          |
+| tableRef            | any                             |                   | Could be use to pass ref over withStyles                          |
+| title               | string or ReactElement          | 'Table Title'     | Table Title (only render if toolbar option is true                |
+
+<br/>
+
+## actions
+
+<Actions/><br/>
+
+## columns
+
+<Columns/><br/>
+
+## components
+
+<Components/><br/>
+
+## detailPanel
+
+<DetailPanel/><br/>
+
+## icons
+
+<Icons/><br/>
+
+## data
+
+Data must be array of objects which has fields defined in columns. For example:
+
+```js
+const data = [
+    {name: 'Mehmet', surname: 'Baran', birthYear: 1987, birthCity: 63},
+    {name: 'Zerya Betül', surname: 'Baran', birthYear: 2017, birthCity: 34},
+]
+
+```
+
+<br/>
+
+## localization
+
+<Localization/><br/>
+
+## options
+
+<Options/><br/>
+

@@ -1,7 +1,7 @@
 const MainPage = require('./src/pages/main-page').default;
 const GetStarted = require('./src/pages/docs/get-started.md').default;
 const Install = require('./src/pages/docs/install.md').default;
-const AllProps = require('./src/pages/docs/all-props.md').default;
+const AllProps = require('./src/pages/docs/all-props/index.mdx').default;
 
 const actions = require('./src/pages/docs/features/actions/index.mdx').default;
 const componentOverriding = require('./src/pages/docs/features/component-overriding/index.mdx').default;
