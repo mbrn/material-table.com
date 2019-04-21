@@ -15,8 +15,15 @@ const theme = createMuiTheme({
     },
     MuiPaper: {
       elevation: 0
-    },
+    }    
   },
+  overrides: {
+    MuiIcon: {
+      root: {
+        color: '#65819D'
+      }
+    }
+  }
 });
 
 export default theme

@@ -22,6 +22,7 @@ export default {
     <br />
   </div>,
   h2: (props) => <div><Typography variant="h6" style={{ color: '#65819D' }} {...props} /></div>,
+  h3: (props) => <div><Typography variant="subtitle1" style={{ color: '#65819D' }} {...props} /></div>,
   p: (props) => <div><Typography variant="subtitle2" {...props} style={{ color: '#65819D' }} /><br /></div>,
   ul: (props) => <List>{props.children}</List>,
   li: (props) => (
