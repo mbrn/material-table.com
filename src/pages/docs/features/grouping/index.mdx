@@ -1,0 +1,53 @@
+import LiveCode from '../../../../components/live-code';
+import MaterialTable from 'material-table';
+
+# Grouping
+
+material-table has grouping feature that lets users to group data by one or more columns.
+
+## Usage
+
+To make grouping available you must open grouping in options.
+
+```jsx
+import MaterialTable from 'material-table';
+
+<MaterialTable
+    // other props
+    options={{
+      grouping: true
+    }}
+/>
+```
+
+<br />
+
+## Hints 
+
+* You can make a column default grouped by setting `column.defaultGroupOrder` with order column and setting `column.defaultGroupSort` with `asc` or `desc`
+* You can close grouping for any column by setting `column.grouping` as `false`
+* You can override grouping bar component with overriding `components.Groupbar`
+* You can override grouped row component with overriding `components.GroupRow`
+
+## Examples
+
+<LiveCode
+    code={require('!!raw-loader!./basic-grouping.js').default}
+    scope={{ MaterialTable }}
+    title="Basic Grouping Example"
+    description="To make grouping available options.grouping is being set as true"
+/>
+
+<LiveCode
+    code={require('!!raw-loader!./default-grouped-field.js').default}
+    scope={{ MaterialTable }}
+    title="Default Grouped Field Example"
+    description="name field marked as default grouped by setting defaultGroupOrder field of specified column as 0"
+/>
+
+<LiveCode
+    code={require('!!raw-loader!./non-grouping-field.js').default}
+    scope={{ MaterialTable }}
+    title="Non Grouping Field Example"
+    description="name field marked as non-grouping by setting grouping field of specified column as false"
+/>
