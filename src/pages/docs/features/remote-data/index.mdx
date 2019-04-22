@@ -1,0 +1,45 @@
+import LiveCode from '../../../../components/live-code';
+import MaterialTable from 'material-table';
+
+# Remote Data
+
+material-table has remote data feature that gives control of table to owner component.
+It expects searching, filtering, sorting and paging are being completed outside of table.
+
+## Usage
+
+If you set a function instead of array, table lets you to manage data fetching.
+You should return a promise in data function.
+
+```jsx
+import MaterialTable from 'material-table';
+
+<MaterialTable
+    // other props
+    data={query =>
+        new Promise((resolve, reject) => {
+            // prepare your data and then call resolve like this:
+            resolve({
+                data: // your data array
+                page: // current page number
+                totalCount: // total page number
+            });
+        })
+    }
+/>;
+```
+
+<br />
+
+## Hints
+
+-   It calls your function with initial options on first render. Then on every change it calls function with new query object. 
+
+## Examples
+
+<LiveCode
+    code={require('!!raw-loader!./remote-data.js').default}
+    scope={{ MaterialTable }}
+    title="Remote Data Example"
+    description="Data fetched from a remote url with fetch function"
+/>
