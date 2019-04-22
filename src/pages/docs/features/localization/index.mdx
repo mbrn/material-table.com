@@ -1,0 +1,56 @@
+import LiveCode from '../../../../components/live-code';
+import MaterialTable from 'material-table';
+import LocalizationProps from '../../all-props/localization.md';
+
+# Localization
+
+You can use your own text to localize material-table. 
+
+## Usage
+
+```jsx
+<MaterialTable
+    // other props
+    localization={{
+        pagination: {
+            labelDisplayedRows: '{from}-{to} of {count}'
+        },
+        toolbar: {
+            nRowsSelected: '{0} row(s) selected'
+        },
+        header: {
+            actions: 'Actions'
+        },
+        body: {
+            emptyDataSourceMessage: 'No records to display',
+            filterRow: {
+                filterTooltip: 'Filter'
+            }
+        }
+    }}
+/>
+```
+
+<br />
+
+## Localization Fields
+
+Every action can have these fields:
+
+<LocalizationProps/><br/>
+
+## Examples
+
+<LiveCode
+    code={require('!!raw-loader!./kurdish-table.js').default}
+    scope={{ MaterialTable }}
+    title="Kurdish Translated Table Example"
+    description="A table with some text translated to Kurdish language"
+/>
+
+<LiveCode
+    code={require('!!raw-loader!./turkish-table.js').default}
+    scope={{ MaterialTable }}
+    title="Turkish Translated Table Example"
+    description="A table with some text translated to Turkish language"
+/>
