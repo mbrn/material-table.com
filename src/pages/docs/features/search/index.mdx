@@ -1,0 +1,42 @@
+import LiveCode from '../../../../components/live-code';
+import MaterialTable from 'material-table';
+
+# Search
+
+material-table has inline search feature that lets users to search a text on all columns.
+
+## Usage
+
+To make search available you must open filtering in options.
+
+```jsx
+import MaterialTable from 'material-table';
+
+<MaterialTable
+    // other props
+    options={{
+      search: true
+    }}
+/>
+```
+
+> Search feature is open by default
+
+<br />
+
+## Hints 
+
+* You can close search for any column by setting `column.searchable` as `false`
+* You can change search icon with overriding `icons.Search`
+* You can change reset search button icon with overriding `icons.ResetSearch`
+* You can change alignment of search field by setting `options.searchFieldAlignment` with `left` or `right`. It is default `right`
+* You can add styles to search field by setting `options.searchFieldStyle`
+
+## Examples
+
+<LiveCode
+    code={require('!!raw-loader!./basic-search.js').default}
+    scope={{ MaterialTable }}
+    title="Basic Search Example"
+    description="To make search available options.search is being set as true"
+/>
