@@ -58,12 +58,14 @@ export default {
     <Paper elevation={0}
       style={{
         padding: 15,
-        color: 'rgb(132, 146, 166)',
         backgroundColor: 'white',
         borderLeft: '4px solid ' + LibzyConfig.theme.palette.primary.main,
-        margin: '0px 3px'
+        display: 'flex'
       }}>
-      {props.children.props.children}
+      <div style={{flex: 1, alignSelf: 'center'}}>
+        <Typography variant="subtitle2">{props.children.props.children}</Typography>
+      </div>
+      <Icon style={{fontSize: 30, opacity: 0.3, marginLeft: 10}}>warning</Icon>
     </Paper>
     <br />
   </div>,

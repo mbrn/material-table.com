@@ -1,0 +1,50 @@
+import LiveCode from '../../../../components/live-code';
+import MaterialTable from 'material-table';
+
+# Selection
+
+material-table has selection feature that lets users to select multiple rows.
+
+## Usage
+
+To make selection available you must open selection in options.
+
+```jsx
+import MaterialTable from 'material-table';
+
+<MaterialTable
+    // other props
+    options={{
+      selection: true
+    }}
+/>
+```
+
+<br />
+
+## Hints 
+
+* You can use `onSelectionChange` to handle selection changes
+
+## Examples
+
+<LiveCode
+    code={require('!!raw-loader!./basic-selection.js').default}
+    scope={{ MaterialTable }}
+    title="Basic Selection Example"
+    description="To make selection available options.selection is being set as true"
+/>
+
+<LiveCode
+    code={require('!!raw-loader!./handling-selection-changes.js').default}
+    scope={{ MaterialTable }}
+    title="Handling Selection Changes Example"
+    description="In this example, onSelectionChange event is used to handle selection changes"
+/>
+
+<LiveCode
+    code={require('!!raw-loader!./actions-on-selected-rows.js').default}
+    scope={{ MaterialTable }}
+    title="Actions on Selected Rows Example"
+    description="In this example, actions behaves like a toolbar action to process on multiple rows"
+/>
