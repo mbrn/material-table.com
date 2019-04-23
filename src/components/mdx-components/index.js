@@ -2,9 +2,6 @@ import React from 'react';
 import { Icon, IconButton, Paper, List, ListItem, ListItemIcon, ListItemText, Typography } from '@material-ui/core';
 import { Link } from 'react-router-dom';
 import LibzyConfig from '../../../libzy.config';
-import { UnControlled as CodeMirror } from 'react-codemirror2'
-import 'codemirror/mode/javascript/javascript'
-import 'codemirror/mode/jsx/jsx'
 import { LiveProvider, LiveEditor } from 'react-live';
 
 
