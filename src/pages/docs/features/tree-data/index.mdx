@@ -1,0 +1,34 @@
+import LiveCode from '../../../../components/live-code';
+import MaterialTable from 'material-table';
+
+# Grouping
+
+material-table has tree data feature that could be use for data that has nested relations.
+
+## Usage
+
+To make tree data available you must set parentChildData that finds parent of a data
+
+```jsx
+import MaterialTable from 'material-table';
+
+<MaterialTable
+    // other props
+    parentChildData={(row, rows) => rows.find(a => a.id === row.parentId)}
+/>
+```
+
+<br />
+
+## Hints 
+
+* You can handle expand-collapse events of any data by `onTreeExpandChange`
+
+## Examples
+
+<LiveCode
+    code={require('!!raw-loader!./basic-tree-data.js').default}
+    scope={{ MaterialTable }}
+    title="Basic Tree Data Example"
+    description="In this example data rendered as tree data"
+/>
