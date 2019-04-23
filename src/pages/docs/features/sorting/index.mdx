@@ -1,0 +1,54 @@
+import LiveCode from '../../../../components/live-code';
+import MaterialTable from 'material-table';
+
+# Sorting
+
+material-table has sorting feature that lets users sort data by any column.
+
+## Usage
+
+To make sorting available you must open sorting in options.
+
+```jsx
+import MaterialTable from 'material-table';
+
+<MaterialTable
+    // other props
+    options={{
+      sorting: true
+    }}
+/>
+```
+
+> Sorting feature is open by default
+
+<br />
+
+## Hints 
+
+* You can add a default sort value to a column by setting `column.defaultSort` with `asc` or `desc`
+* You can close sorting for any column by setting `column.sorting` as `false`
+* You can change sorting algorithm by set a function to `column.customSort`
+
+## Examples
+
+<LiveCode
+    code={require('!!raw-loader!./basic-sorting.js').default}
+    scope={{ MaterialTable }}
+    title="Basic Sorting Example"
+    description="To make sorting available options.sorting is being set as true"
+/>
+
+<LiveCode
+    code={require('!!raw-loader!./non-sorting-field.js').default}
+    scope={{ MaterialTable }}
+    title="Non Sorting Field Example"
+    description="name field marked as non-sorting by setting sorting field of specified column as false"
+/>
+
+<LiveCode
+    code={require('!!raw-loader!./custom-sorting-algorithm.js').default}
+    scope={{ MaterialTable }}
+    title="Custom Sorting Algorithm Example"
+    description="Changing algorithm of sorting for name field. New algorithm sort by length of string"
+/>
