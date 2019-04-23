@@ -1,0 +1,39 @@
+import LiveCode from '../../../../components/live-code';
+import MaterialTable from 'material-table';
+
+# Styling
+
+material-table has a few styling options to apply styles to some components. 
+
+| Field                       | Type          | Description                             |  
+|:----------------------------|:--------------|:----------------------------------------|
+| column.cellStyle            | style of func | style to apply specified cells          |
+| column.headerStyle          | style         | style to apply specified column header  |
+| options.headerStyle         | style         | style to apply all header cells         |
+| options.rowStyle            | style of func | style to apply all rows cells           |
+| options.searchFieldStyle    | style         | style to apply search textfield         |
+
+<br />
+
+## Examples
+
+<LiveCode
+    code={require('!!raw-loader!./cell-header-styling.js').default}
+    scope={{ MaterialTable }}
+    title="Cell Header Styling Example"
+    description="In this example styles applied to cells and headers"
+/>
+
+<LiveCode
+    code={require('!!raw-loader!./row-styling.js').default}
+    scope={{ MaterialTable }}
+    title="Row Styling Example"
+    description="In this example style applied to all rows"
+/>
+
+<LiveCode
+    code={require('!!raw-loader!./selected-row-styling.js').default}
+    scope={{ MaterialTable }}
+    title="Selected Row Styling Example"
+    description="In this example style applied to selected row. Selected row handled by onRowClick event"
+/>
