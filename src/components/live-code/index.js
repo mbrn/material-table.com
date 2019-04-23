@@ -115,7 +115,7 @@ const styles = theme => ({
   },
   livePreview: {
     maxWidth: '100%',
-    overflow: 'scroll'
+    overflow: 'auto'
   }
 });
 

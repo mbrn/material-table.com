@@ -7,7 +7,7 @@ import { LiveProvider, LiveEditor } from 'react-live';
 
 export default {
   h1: (props) => <div>
-    <Typography variant="h4" {...props}/>
+    <Typography variant="h4" {...props} />
     <div style={{
       width: 50,
       borderBottom: '4px solid ' + LibzyConfig.theme.palette.primary.main,
@@ -20,9 +20,9 @@ export default {
   p: (props) => <div><Typography variant="subtitle2" {...props} /><br /></div>,
   ul: (props) => <List>{props.children}</List>,
   li: (props) => (
-    <ListItem dense style={{paddingTop: 4, paddingBottom: 4}}>
-      <ListItemIcon style={{ marginRight: 0, marginTop: 5, alignSelf: 'flex-start' }}><Icon style={{ fontSize:10 }} iconSize="small">brightness_1</Icon></ListItemIcon>
-      <ListItemText style={{paddingLeft: 8}}><Typography variant="subtitle2" {...props} /></ListItemText>
+    <ListItem dense style={{ paddingTop: 4, paddingBottom: 4 }}>
+      <ListItemIcon style={{ marginRight: 0, marginTop: 5, alignSelf: 'flex-start' }}><Icon style={{ fontSize: 10 }} iconSize="small">brightness_1</Icon></ListItemIcon>
+      <ListItemText style={{ paddingLeft: 8 }}><Typography variant="subtitle2" {...props} /></ListItemText>
     </ListItem>
   ),
   a: (props) => {
@@ -59,19 +59,24 @@ export default {
         borderLeft: '4px solid ' + LibzyConfig.theme.palette.primary.main,
         display: 'flex'
       }}>
-      <div style={{flex: 1, alignSelf: 'center'}}>
+      <div style={{ flex: 1, alignSelf: 'center' }}>
         <Typography variant="subtitle2">{props.children.props.children}</Typography>
       </div>
-      <Icon style={{fontSize: 30, opacity: 0.3, marginLeft: 10}}>warning</Icon>
+      <Icon style={{ fontSize: 30, opacity: 0.3, marginLeft: 10 }}>warning</Icon>
     </Paper>
     <br />
   </div>,
-  table: (props) => <table
-    style={{
-      width: '100%'
-    }}>
-    {props.children}
-  </table>,
+  table: (props) => <div style={{width: '100%', display: 'grid'}}>
+    <table
+      style={{
+        maxWidth: '100%',
+        display: 'block',
+        overflow: 'auto'
+      }}
+      >
+      {props.children}
+    </table>
+  </div>,
   thead: (props) => <thead
     style={{
       backgroundColor: 'white',
