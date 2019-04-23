@@ -12,6 +12,7 @@ import PropTypes from 'prop-types';
 import React from 'react';
 import { Link } from "react-router-dom";
 import LibzyConfig from '../../../libzy.config';
+import { Tooltip } from '@material-ui/core';
 
 const styles = theme => ({
   root: {
@@ -83,7 +84,7 @@ class LibzyAppBar extends React.Component {
               <MenuIcon />
             </IconButton>
             <Link to="/" style={{ textDecoration: 'none', color: 'white' }}>
-              <Typography className={classes.title} variant="h6" noWrap style={{color: 'white'}}>
+              <Typography className={classes.title} variant="h6" noWrap style={{ color: 'white' }}>
                 {LibzyConfig.title}
               </Typography>
             </Link>
@@ -102,19 +103,21 @@ class LibzyAppBar extends React.Component {
               />
             </div>
             <div className={classes.sectionDesktop}>
-              <IconButton color="inherit" href={LibzyConfig.github}>
-                <CodeIcon />
-              </IconButton>
+              <Tooltip title="Github Repository">
+                <IconButton color="inherit" href={LibzyConfig.github}>
+                  <i className="fab fa-github" />
+                </IconButton>
+              </Tooltip>
             </div>
           </Toolbar>
         </AppBar>
       </div>
-    );
-  }
-}
-
+        );
+      }
+    }
+    
 LibzyAppBar.propTypes = {
-  classes: PropTypes.object.isRequired,
-};
-
+          classes: PropTypes.object.isRequired,
+      };
+      
 export default withStyles(styles)(LibzyAppBar);
