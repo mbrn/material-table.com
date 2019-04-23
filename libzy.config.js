@@ -267,5 +267,6 @@ module.exports = {
   },
   options: {
     routerType: 'hash', // hash | browser
+    search: false
   }
 }

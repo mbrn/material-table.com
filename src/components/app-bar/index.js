@@ -80,9 +80,11 @@ class LibzyAppBar extends React.Component {
       <div className={classes.root}>
         <AppBar position="static">
           <Toolbar variant="dense">
-            <IconButton className={classes.menuButton} color="inherit" aria-label="Open drawer" onClick={this.props.onMenuButtonClick}>
-              <MenuIcon />
-            </IconButton>
+            {this.props.showMenuButton &&
+              <IconButton className={classes.menuButton} color="inherit" aria-label="Open drawer" onClick={this.props.onMenuButtonClick}>
+                <MenuIcon />
+              </IconButton>
+            }
             <Link to="/" style={{ textDecoration: 'none', color: 'white' }}>
               <Typography className={classes.title} variant="h6" noWrap style={{ color: 'white' }}>
                 {LibzyConfig.title}
@@ -90,18 +92,20 @@ class LibzyAppBar extends React.Component {
             </Link>
 
             <div className={classes.grow} />
-            <div className={classes.search}>
-              <div className={classes.searchIcon}>
-                <SearchIcon />
+            {LibzyConfig.options.search &&
+              <div className={classes.search}>
+                <div className={classes.searchIcon}>
+                  <SearchIcon />
+                </div>
+                <InputBase
+                  placeholder="Search…"
+                  classes={{
+                    root: classes.inputRoot,
+                    input: classes.inputInput,
+                  }}
+                />
               </div>
-              <InputBase
-                placeholder="Search…"
-                classes={{
-                  root: classes.inputRoot,
-                  input: classes.inputInput,
-                }}
-              />
-            </div>
+            }
             <div className={classes.sectionDesktop}>
               <Tooltip title="Github Repository">
                 <IconButton color="inherit" href={LibzyConfig.github}>
@@ -112,12 +116,12 @@ class LibzyAppBar extends React.Component {
           </Toolbar>
         </AppBar>
       </div>
-        );
-      }
-    }
-    
+    );
+  }
+}
+
 LibzyAppBar.propTypes = {
-          classes: PropTypes.object.isRequired,
-      };
-      
+  classes: PropTypes.object.isRequired,
+};
+
 export default withStyles(styles)(LibzyAppBar);
