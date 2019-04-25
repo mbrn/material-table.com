@@ -1,4 +1,4 @@
-const MainPage = require('./src/pages/main-page').default;
+const MainPage = require('libzy-lib').MainPage;
 const GetStarted = require('./src/pages/docs/get-started.md').default;
 const Install = require('./src/pages/docs/install.md').default;
 const AllProps = require('./src/pages/docs/all-props/index.mdx').default;
