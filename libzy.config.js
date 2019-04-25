@@ -23,6 +23,7 @@ const treeData = require('./src/pages/docs/features/tree-data/index.mdx').defaul
 module.exports = {
   title: 'material-table',
   subTitle: 'React data table component that based on material-ui',
+  logoImage: '/assets/logo.svg',
   github: 'https://github.com/mbrn/material-table',
   githubShort: 'mbrn/material-table',
   menuTree: [

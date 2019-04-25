@@ -15,6 +15,7 @@ module.exports = {
     plugins: [
         new CleanWebpackPlugin(),
         new CopyWebpackPlugin([
+          { from: path.resolve(paths.publicPath, 'assets'), to: path.resolve(paths.outputPath, 'assets') },
           { from: path.resolve(paths.root, 'CNAME'), to: paths.outputPath}	
         ]),
     ],

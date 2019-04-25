@@ -29,7 +29,8 @@ module.exports = {
         contentBase: paths.outputPath,
         compress: true,
         hot: true,
-        historyApiFallback: true
+        historyApiFallback: true,
+        contentBase: "./public"
     },
     output: {
       publicPath: '/'
