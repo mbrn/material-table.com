@@ -14,6 +14,7 @@
 | export                  | boolean         | true      | Flag for make column exportable or not                                                                        |
 | field                   | string          |           | Field name of data row                                                                                        |
 | filtering               | boolean         | true      | Flag to activate or disable filtering feature of column                                                       |
+| filterCellStyle         | object          |           | Filter cell style                                                                                             |
 | grouping                | boolean         | true      | Flag to activate or disable grouping feature of column                                                        | 
 | headerStyle             | object          |           | Header cell style                                                                                             |
 | hidden                  | boolean         | false     | Flag for hide column                                                                                          |

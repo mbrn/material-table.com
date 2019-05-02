@@ -14,6 +14,7 @@ Options property could be given to component as `options` property. You can chan
 | exportFileName             | string                 | Title         | Exported file name                                                                |
 | exportCsv                  | func                   |               | Function to create a custom CSV file                                              |
 | filtering                  | boolean                | false         | Flag for filtering row                                                            |
+| filterCellStyle            | object                 |               | Filter cell style for all filter cells                                            |
 | header                     | boolean                | true          | Flag for header visibility                                                        |
 | headerStyle                | object                 |               | Header cell style for all headers                                                 |
 | loadingType                | `overlay` or `linear`  | `overlay`     | Loading animation type                                                            |
