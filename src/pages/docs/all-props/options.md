@@ -9,6 +9,7 @@ Options property could be given to component as `options` property. You can chan
 | detailPanelType            | `single` or `multiple` | `multiple`    | Detail panel visibility type.                                                     |
 | doubleHorizontalScroll     | boolean                | false         | Flag for double scroll bar for long tables                                        |
 | emptyRowsWhenPaging        | boolean                | true          | Flag for rendering rows to complete page size                                     |
+| exportAllData              | boolean                | false         | Flag for export all data instead of rendered data                                 |
 | exportButton               | boolean                | false         | Flag for export button that render export buttons                                 |
 | exportDelimiter            | string                 | ,             | Delimiter to use in exported CSV file                                             |
 | exportFileName             | string                 | Title         | Exported file name                                                                |

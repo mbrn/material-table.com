@@ -3,8 +3,8 @@ class DisableFieldEditable extends React.Component {
     super(props);
     this.state = {
       columns: [
-        { title: 'Name', field: 'name', readonly: true },
-        { title: 'Surname', field: 'surname' },
+        { title: 'Name', field: 'name', editable: 'onUpdate' },
+        { title: 'Surname', field: 'surname', editable: 'never' },
         { title: 'Birth Year', field: 'birthYear', type: 'numeric' },
         {
           title: 'Birth Place',
