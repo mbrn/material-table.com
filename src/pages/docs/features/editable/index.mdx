@@ -13,6 +13,8 @@ Every function must return a promise.
 ```jsx
 <MaterialTable
     editable={{
+        isEditable: rowData => rowData.name === "a", // only name(a) rows would be editable
+        isDeletable: rowData => rowData.name === "b", // only name(a) rows would be deletable
         onRowAdd: newData =>
             new Promise((resolve, reject) => {
                 setTimeout(() => {
@@ -51,7 +53,6 @@ Every function must return a promise.
     }}
 />
 ```
-
 <br />
 
 ## Examples
