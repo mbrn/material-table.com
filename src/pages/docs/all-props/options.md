@@ -2,6 +2,7 @@ Options property could be given to component as `options` property. You can chan
 
 | Field                      | Type                   | Default       | Description                                                                       |
 |:---------------------------|:-----------------------|:--------------|:----------------------------------------------------------------------------------|
+| actionsCellStyle           | object                 |               | Actions cell style                                                                |
 | actionsColumnIndex         | number                 | 0             | Order of actions column                                                           |
 | addRowPosition             | `first` or `last`      | `last`        | Position of add row                                                               |
 | columnsButton              | boolean                | false         | Flag for columns button that controls which column could be rendered              |
