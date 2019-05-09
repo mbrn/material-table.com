@@ -1,5 +1,6 @@
 import { LiveCode } from 'libzy-lib';
 import MaterialTable from 'material-table';
+import { createMuiTheme, MuiThemeProvider } from '@material-ui/core';
 
 # Styling
 
@@ -36,4 +37,12 @@ material-table has a few styling options to apply styles to some components.
     scope={{ MaterialTable }}
     title="Selected Row Styling Example"
     description="In this example style applied to selected row. Selected row handled by onRowClick event"
+/>
+
+
+<LiveCode
+    code={require('!!raw-loader!./styling-with-mui-theme-provider.js').default}
+    scope={{ MaterialTable, createMuiTheme, MuiThemeProvider }}
+    title="Styling with MuiThemeProvider Example"
+    description="In this example MuiThemeProvider applied to table"
 />
