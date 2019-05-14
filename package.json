@@ -1,6 +1,6 @@
 {
 	"name": "material-table.com",
-	"version": "1.36.2",
+	"version": "1.36.3",
 	"scripts": {
 		"start": "cross-env NODE_ENV=development webpack-dev-server --open",
 		"build": "cross-env NODE_ENV=production webpack"
