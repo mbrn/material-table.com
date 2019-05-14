@@ -1,5 +1,6 @@
 import { LiveCode } from 'libzy-lib';
 import MaterialTable from 'material-table';
+import { Button } from '@material-ui/core';
 
 # Remote Data
 
@@ -42,4 +43,11 @@ import MaterialTable from 'material-table';
     scope={{ MaterialTable }}
     title="Remote Data Example"
     description="Data fetched from a remote url with fetch function"
+/>
+
+<LiveCode
+    code={require('!!raw-loader!./refresh-data.js').default}
+    scope={{ MaterialTable, Button }}
+    title="Refresh Data Example"
+    description="Table is being forced to refresh data"
 />
