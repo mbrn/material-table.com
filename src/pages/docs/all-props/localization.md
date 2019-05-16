@@ -39,3 +39,4 @@ Localization settings could be used to change/translate default texts of datatab
 | toolbar.exportAriaLabel       | string | Export                    |                                                  |
 | toolbar.exportName            | string | Export as CSV             |                                                  |
 | toolbar.searchTooltip         | string | Search                    |                                                  |
+| toolbar.searchPlaceholder     | string | Search                    |                                                  |
