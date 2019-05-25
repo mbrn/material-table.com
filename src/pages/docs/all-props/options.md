@@ -30,6 +30,7 @@ Options property could be given to component as `options` property. You can chan
 | rowStyle                   | object or func         |               | Css style to be applied rows                                                      |
 | showEmptyDataSourceMessage | boolean                | true          | Flag for showing message if there is no data in table                             |
 | showSelectAllCheckbox      | boolean                | true          | Flag for showing select all checkbox                                              |
+| showTextRowsSelected       | boolean                | true          | Flag for showing selected rows text on toolbar                                    |
 | search                     | boolean                | true          | Flag for search feature                                                           |
 | searchFieldAlignment       | string                 | 'right'       | Alignment for search text field in toolbar                                        |
 | searchFieldStyle           | object                 | {}            | Search field css style                                                            |
