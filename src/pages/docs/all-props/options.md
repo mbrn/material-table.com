@@ -7,7 +7,7 @@ Options property could be given to component as `options` property. You can chan
 | addRowPosition             | `first` or `last`      | `last`        | Position of add row                                                               |
 | columnsButton              | boolean                | false         | Flag for columns button that controls which column could be rendered              |
 | debounceInterval           | number                 | 200           | debounce interval for search and filter                                           |
-| detailPanelColumnAlignment | `left` or `right`      | `left`        | Detail panel column alignment.                                                     |
+| detailPanelColumnAlignment | `left` or `right`      | `left`        | Detail panel column alignment.                                                    |
 | detailPanelType            | `single` or `multiple` | `multiple`    | Detail panel visibility type.                                                     |
 | doubleHorizontalScroll     | boolean                | false         | Flag for double scroll bar for long tables                                        |
 | emptyRowsWhenPaging        | boolean                | true          | Flag for rendering rows to complete page size                                     |
@@ -35,6 +35,7 @@ Options property could be given to component as `options` property. You can chan
 | searchFieldAlignment       | string                 | 'right'       | Alignment for search text field in toolbar                                        |
 | searchFieldStyle           | object                 | {}            | Search field css style                                                            |
 | selection                  | boolean                | false         | Flag for selection feature                                                        |
+| selectionProps             | `object` or `func`     | {}            | Selection checkbox props                                                          |
 | sorting                    | boolean                | true          | Flag to activate or disable sorting feature of table                              |
 | toolbar                    | boolean                | true          | Flag for toolbar                                                                  |
 | showTitle                  | boolean                | true          | Flag for title                                                                    |
