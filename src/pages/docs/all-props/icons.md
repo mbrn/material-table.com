@@ -14,5 +14,6 @@
 | PreviousPage    | React.Element | material icons 'chevron_left'   | PreviousPage icon     |
 | ResetSearch     | React.Element | material icons 'clear'          | ResetSearch icon      |
 | Search          | React.Element | material icons 'search'         | Search icon           |
+| SortArrow       | React.Element | material icons 'arrow_upward'   | SortArrow icon        |
 | ThirdStateCheck | React.Element | material icons 'remove'         | ThirdStateCheck icon  |
 | ViewColumn      | React.Element | material icons 'view_column'    | ViewColumn icon       |
