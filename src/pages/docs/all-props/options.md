@@ -29,6 +29,7 @@ Options property could be given to component as `options` property. You can chan
 | paginationType             | `normal` or `stepped`  | `normal`      | Flag for pagination type                                                          |
 | rowStyle                   | object or func         |               | Css style to be applied rows                                                      |
 | showEmptyDataSourceMessage | boolean                | true          | Flag for showing message if there is no data in table                             |
+| showFirstLastPageButtons   | boolean                | true          | Flag for showing first and last page buttons on pagination component              |
 | showSelectAllCheckbox      | boolean                | true          | Flag for showing select all checkbox                                              |
 | showTextRowsSelected       | boolean                | true          | Flag for showing selected rows text on toolbar                                    |
 | search                     | boolean                | true          | Flag for search feature                                                           |
