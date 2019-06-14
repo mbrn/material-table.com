@@ -60,7 +60,7 @@
 		"codemirror": "^5.39.2",
 		"core-js": "3.0.1",
 		"libzy-lib": "0.5.2",
-		"material-table": "^1.39.0",
+		"material-table": "^1.39.1",
 		"react": "^16.8.6",
 		"react-codemirror2": "^5.1.0",
 		"react-dom": "^16.8.6"
