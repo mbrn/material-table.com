@@ -24,6 +24,7 @@ Options property could be given to component as `options` property. You can chan
 | loadingType                | `overlay` or `linear`  | `overlay`     | Loading animation type                                                            |
 | maxBodyHeight              | number or string       |               | Max body height                                                                   |
 | initialPage                | number                 | 0             | Initial Page Number                                                               |
+| padding                    | `default` or `dense`   | `default`     | Padding of cells and rows                                                         |
 | paging                     | boolean                | true          | Flag for paging feature                                                           |
 | pageSize                   | numeric                | 5             | Number of rows that would be rendered on every page                               |
 | pageSizeOptions            | array                  | [5, 10, 20]   | Page size options that could be selected by user                                  |
