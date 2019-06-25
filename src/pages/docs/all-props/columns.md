@@ -16,6 +16,7 @@
 | field                   | string                              |           | Field name of data row                                                                                        |
 | filtering               | boolean                             | true      | Flag to activate or disable filtering feature of column                                                       |
 | filterCellStyle         | object                              |           | Filter cell style                                                                                             |
+| filterPlaceholder       | string                              |           | Filter textbox placeholder                                                                                    |
 | grouping                | boolean                             | true      | Flag to activate or disable grouping feature of column                                                        | 
 | headerStyle             | object                              |           | Header cell style                                                                                             |
 | hidden                  | boolean                             | false     | Flag for hide column                                                                                          |
