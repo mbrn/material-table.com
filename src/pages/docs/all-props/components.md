@@ -1,17 +1,17 @@
-| Field           | Type          | Default           | Description                                                                               |
-|:----------------|:--------------|:------------------|:------------------------------------------------------------------------------------------|
-| Action          | React.Element | MTableAction      | Action component                                                                          |
-| Actions         | React.Element | MTableActions     | Actions component                                                                         |
-| Body            | React.Element | MTableBody        | Body component                                                                            |
-| Cell            | React.Element | MTableCell        | Cell component                                                                            |
-| Container       | React.Element | Paper             | Container that everything renders in                                                      |
-| EditField       | React.Element | MTableEditField   | EditField component                                                                       |
-| EditRow         | React.Element | MTableEditRow     | EditRow component                                                                         |
-| FilterRow       | React.Element | MTableFilterRow   | FilterRow component                                                                       |
-| Groupbar        | React.Element | MTableFilterRow   | FilterRow component                                                                       |
-| FilterRow       | React.Element | MTableFilterRow   | FilterRow component                                                                       |
-| Header          | React.Element | MTableHeader      | Header component                                                                          |
-| OverlayLoading  | React.Element | CircularProgress  | Overlay loading component                                                                 |
-| Pagination      | React.Element | TablePagination   | Pagination component                                                                      |
-| Row             | React.Element | MTableBodyRow     | Row component                                                                             |
-| Toolbar         | React.Element | MTableToolbar     | Toolbar component                                                                         |
+| Field           | Type         | Default           | Description                                                                               |
+|:----------------|:-------------|:------------------|:------------------------------------------------------------------------------------------|
+| Action          | ReactElement | MTableAction      | Action component                                                                          |
+| Actions         | ReactElement | MTableActions     | Actions component                                                                         |
+| Body            | ReactElement | MTableBody        | Body component                                                                            |
+| Cell            | ReactElement | MTableCell        | Cell component                                                                            |
+| Container       | ReactElement | Paper             | Container that everything renders in                                                      |
+| EditField       | ReactElement | MTableEditField   | EditField component                                                                       |
+| EditRow         | ReactElement | MTableEditRow     | EditRow component                                                                         |
+| FilterRow       | ReactElement | MTableFilterRow   | FilterRow component                                                                       |
+| Groupbar        | ReactElement | MTableFilterRow   | FilterRow component                                                                       |
+| FilterRow       | ReactElement | MTableFilterRow   | FilterRow component                                                                       |
+| Header          | ReactElement | MTableHeader      | Header component                                                                          |
+| OverlayLoading  | ReactElement | CircularProgress  | Overlay loading component                                                                 |
+| Pagination      | ReactElement | TablePagination   | Pagination component                                                                      |
+| Row             | ReactElement | MTableBodyRow     | Row component                                                                             |
+| Toolbar         | ReactElement | MTableToolbar     | Toolbar component                                                                         |
