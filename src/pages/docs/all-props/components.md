@@ -7,7 +7,6 @@
 | Container       | React.Element | Paper             | Container that everything renders in                                                      |
 | EditField       | React.Element | MTableEditField   | EditField component                                                                       |
 | EditRow         | React.Element | MTableEditRow     | EditRow component                                                                         |
-| FilterRow       | React.Element | MTableFilterRow   | FilterRow component                                                                       |
 | Groupbar        | React.Element | MTableFilterRow   | FilterRow component                                                                       |
 | FilterRow       | React.Element | MTableFilterRow   | FilterRow component                                                                       |
 | Header          | React.Element | MTableHeader      | Header component                                                                          |
