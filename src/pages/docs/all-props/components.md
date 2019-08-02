@@ -8,7 +8,7 @@
 | EditField       | React.Element | MTableEditField   | EditField component                                                                       |
 | EditRow         | React.Element | MTableEditRow     | EditRow component                                                                         |
 | FilterRow       | React.Element | MTableFilterRow   | FilterRow component                                                                       |
-| Groupbar        | React.Element | MTableFilterRow   | FilterRow component                                                                       |
+| Groupbar        | React.Element | MTableGroupbar    | FilterRow component                                                                       |
 | FilterRow       | React.Element | MTableFilterRow   | FilterRow component                                                                       |
 | Header          | React.Element | MTableHeader      | Header component                                                                          |
 | OverlayLoading  | React.Element | CircularProgress  | Overlay loading component                                                                 |
