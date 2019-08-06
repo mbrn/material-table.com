@@ -4,7 +4,7 @@ class Editable extends React.Component {
     this.state = {
       columns: [
         { title: 'Name', field: 'name' },
-        { title: 'Surname', field: 'surname' },
+        { title: 'Surname', field: 'surname', initialEditValue: 'initial edit value' },
         { title: 'Birth Year', field: 'birthYear', type: 'numeric' },
         {
           title: 'Birth Place',

@@ -20,6 +20,7 @@
 | grouping                | boolean                                      | true      | Flag to activate or disable grouping feature of column                                                        | 
 | headerStyle             | object                                       |           | Header cell style                                                                                             |
 | hidden                  | boolean                                      | false     | Flag for hide column                                                                                          |
+| initialEditValue        | any                                          |           | Initial value on add new row                                                                                  |
 | lookup                  | object                                       |           | Key value pair for lookup render data from                                                                    |
 | readonly                | boolean                                      | false     | Flag to make column readonly when editing, the column will still be editable when adding a row                |
 | removable               | boolean                                      | true      | Flag for column that could be removed with columnsButton or not                                               |
