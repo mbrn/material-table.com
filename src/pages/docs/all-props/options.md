@@ -23,6 +23,7 @@ Options property could be given to component as `options` property. You can chan
 | headerStyle                | object                 |               | Header cell style for all headers                                                 |
 | loadingType                | `overlay` or `linear`  | `overlay`     | Loading animation type                                                            |
 | maxBodyHeight              | number or string       |               | Max body height                                                                   |
+| minBodyHeight              | number or string       |               | Min body height                                                                   |
 | initialPage                | number                 | 0             | Initial Page Number                                                               |
 | padding                    | `default` or `dense`   | `default`     | Padding of cells and rows                                                         |
 | paging                     | boolean                | true          | Flag for paging feature                                                           |
