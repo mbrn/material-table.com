@@ -9,7 +9,6 @@
 | EditRow         | ReactElement | MTableEditRow     | EditRow component                                                                         |
 | FilterRow       | ReactElement | MTableFilterRow   | FilterRow component                                                                       |
 | Groupbar        | ReactElement | MTableFilterRow   | FilterRow component                                                                       |
-| FilterRow       | ReactElement | MTableFilterRow   | FilterRow component                                                                       |
 | Header          | ReactElement | MTableHeader      | Header component                                                                          |
 | OverlayLoading  | ReactElement | CircularProgress  | Overlay loading component                                                                 |
 | Pagination      | ReactElement | TablePagination   | Pagination component                                                                      |
