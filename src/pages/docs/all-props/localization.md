@@ -9,7 +9,6 @@ Localization settings could be used to change/translate default texts of datatab
 | body.editTooltip              | string | Edit                      |                                                  |
 | body.filterRow                | object | {}                        | Key value pair for localize filter row component |
 | body.filterRow.filterTooltip  | string | Filter                    |                                                  |
-| body.filterRow.filterTooltip  | string | Filter                    |                                                  |
 | body.editRow                  | object | {}                        | Key value pair for localize edit row component   |
 | body.editRow.deleteText       | string | Are you sure delete this row?|                                               |
 | body.editRow.cancelTooltip    | string | Cancel                    |                                                  |
