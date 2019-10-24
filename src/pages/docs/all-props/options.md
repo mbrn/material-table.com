@@ -43,3 +43,4 @@ Options property could be given to component as `options` property. You can chan
 | toolbar                    | boolean                | true          | Flag for toolbar                                                                  |
 | showTitle                  | boolean                | true          | Flag for title                                                                    |
 | toolbarButtonAlignment     | `left` or `right`      | 'right'       | Alignment for buttons in toolbar                                                  |
+| draggable                  | boolean                | true          | Flag for drag and drop headers                                                    |
