@@ -4,13 +4,12 @@ import { Button } from '@material-ui/core';
 
 # Remote Data
 
-material-table has remote data feature that gives control of table to owner component.
-It expects searching, filtering, sorting and paging are being completed outside of table.
+`material-table`' remote data feature allows the user to implement a custom data fetching function.
+Using this functionality, searching, filtering, sorting and paging are ignored by `material-table` and have to be manually implemented.
 
 ## Usage
 
-If you set a function instead of array, table lets you to manage data fetching.
-You should return a promise in data function.
+Instead of providing the data array as `prop.data`, you have to provide a function, which returns a Promise holding the `data`, the current `page` and the `totalCount`.
 
 ```jsx
 import MaterialTable from 'material-table';

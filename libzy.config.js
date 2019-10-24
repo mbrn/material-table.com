@@ -66,7 +66,7 @@ module.exports = {
           },
           {
             title: 'Editable',
-            text: 'material-table lets you to make data editable',
+            text: 'material-table makes the data editable',
             button: {
               path: '/docs/features/editable',
               text: 'Details and Examples'
@@ -106,7 +106,7 @@ module.exports = {
           },
           {
             title: 'Remote Data',
-            text: 'material-table lets you to manage your data remotely',
+            text: 'material-table allows you to manage your data remotely',
             button: {
               path: '/docs/features/remote-data',
               text: 'Details and Examples'
