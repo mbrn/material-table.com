@@ -1,7 +1,7 @@
 function SelectedRowStyling() {
   const { useState } = React;
   const [selectedRow, setSelectedRow] = useState(null);
-  console.log('selete', selectedRow);
+  
   return (
     <MaterialTable
       title="Selected Row Styling Preview"
