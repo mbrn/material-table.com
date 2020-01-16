@@ -15,6 +15,7 @@ Localization settings could be used to change/translate default texts of datatab
 | body.editRow.saveTooltip      | string | Save                      |                                                  |
 | grouping                      | object | {}                        | Key value pair for localize grouping component   |
 | grouping.placeholder          | string | Drag headers ...          |                                                  |
+| grouping.groupedBy            | string | Grouped By:               |                                                  |
 | header                        | object | {}                        | Key value pair for localize header component     |
 | header.actions                | string | Actions                   |                                                  |
 | pagination                    | object | {}                        | Key value pair for localize pagination component |
