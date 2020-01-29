@@ -7,8 +7,8 @@ material-table has inline editing feature that lets users to add, remove, update
 
 ## Usage
 
-To make table editable, you should set `editable` prop that has `onRowAdd`, `onRowUpdate`, `onRowDelete`  functions to manipulate data. 
-Every function must return a promise. 
+To make table editable, you should set `editable` prop that has `onRowAdd`, `onRowUpdate`, `onRowDelete`  functions to manipulate data.
+Every function must return a promise.
 
 ```jsx
 <MaterialTable
@@ -31,8 +31,8 @@ Every function must return a promise.
                 setTimeout(() => {
                     {
                         /* const data = this.state.data;
-                        const index = data.indexOf(oldData);
-                        data[index] = newData;                
+                        const index = oldData.tableData.id;
+                        data[index] = newData;
                         this.setState({ data }, () => resolve()); */
                     }
                     resolve();
@@ -43,7 +43,7 @@ Every function must return a promise.
                 setTimeout(() => {
                     {
                         /* let data = this.state.data;
-                        const index = data.indexOf(oldData);
+                        const index = oldData.tableData.id;
                         data.splice(index, 1);
                         this.setState({ data }, () => resolve()); */
                     }
@@ -55,11 +55,11 @@ Every function must return a promise.
 ```
 <br />
 
-## Hints 
+## Hints
 
 * You can use `column.editComponent` to override edit component for a column.
 * You can use `column.initialEditValue` to set initial value on addding new row.
-* You can call `reject()` to keep open row editable. 
+* You can call `reject()` to keep open row editable.
 
 ## Examples
 

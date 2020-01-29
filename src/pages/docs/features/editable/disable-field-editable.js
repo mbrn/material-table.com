@@ -42,7 +42,7 @@ class DisableFieldEditable extends React.Component {
               setTimeout(() => {
                 {
                   const data = this.state.data;
-                  const index = data.indexOf(oldData);
+                  const index = oldData.tableData.id;
                   data[index] = newData;
                   this.setState({ data }, () => resolve());
                 }
@@ -54,7 +54,7 @@ class DisableFieldEditable extends React.Component {
               setTimeout(() => {
                 {
                   let data = this.state.data;
-                  const index = data.indexOf(oldData);
+                  const index = oldData.tableData.id;
                   data.splice(index, 1);
                   this.setState({ data }, () => resolve());
                 }
