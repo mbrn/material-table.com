@@ -4,9 +4,9 @@ import ActionProps from '../../all-props/actions.md'
 
 # Actions
 
-You can add buttons to rows or toolbar by using actions prop. Actions prop takes array of actions. 
+You can add buttons to rows or toolbar by using actions prop. Actions prop takes array of actions.
 
-## Usage 
+## Usage
 
 ```jsx
 <MaterialTable
@@ -33,37 +33,44 @@ Every action can have these fields:
 
 ## Examples
 
-<LiveCode 
+<LiveCode
   code={require('!!raw-loader!./simple-action.js').default}
-  scope={{MaterialTable}} 
+  scope={{MaterialTable}}
   title="Simple Action Example"
   description="A simple action added to table. It fires an alert with name of current user when clicked."
 />
 
-<LiveCode 
+<LiveCode
+  code={require('!!raw-loader!./duplicate-action.js').default}
+  scope={{MaterialTable}}
+  title="Duplicate Action Example"
+  description="A more complex action added to table."
+/>
+
+<LiveCode
   code={require('!!raw-loader!./multiple-actions.js').default}
-  scope={{MaterialTable}} 
+  scope={{MaterialTable}}
   title="Multiple Actions Example"
   description="You can add more that one actions."
 />
 
-<LiveCode 
+<LiveCode
   code={require('!!raw-loader!./conditional-actions.js').default}
-  scope={{MaterialTable}} 
+  scope={{MaterialTable}}
   title="Conditionals Actions Example"
   description="You can set an action to disabled or change its color according to rowData. In example you can not delete users that has born after before 2000."
 />
 
-<LiveCode 
+<LiveCode
   code={require('!!raw-loader!./positioning-actions-column.js').default}
-  scope={{MaterialTable}} 
+  scope={{MaterialTable}}
   title="Positioning Actions Column Example"
   description="You can change position of columns by setting options.actionsColumnIndex."
 />
 
-<LiveCode 
+<LiveCode
   code={require('!!raw-loader!./free-action.js').default}
-  scope={{MaterialTable}} 
+  scope={{MaterialTable}}
   title="Free Action Example"
   description="You can add rowData independents actions to toolbar by setting isFreeAction as true."
 />
