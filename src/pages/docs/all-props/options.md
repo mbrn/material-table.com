@@ -36,6 +36,7 @@ Options property could be given to component as `options` property. You can chan
 | showSelectAllCheckbox      | boolean                | true          | Flag for showing select all checkbox                                              |
 | showTextRowsSelected       | boolean                | true          | Flag for showing selected rows text on toolbar                                    |
 | search                     | boolean                | true          | Flag for search feature                                                           |
+| searchText                 | string                 |               | Initialize search field before table was render                                                         |
 | searchFieldAlignment       | string                 | 'right'       | Alignment for search text field in toolbar                                        |
 | searchFieldStyle           | object                 | {}            | Search field css style                                                            |
 | selection                  | boolean                | false         | Flag for selection feature                                                        |
