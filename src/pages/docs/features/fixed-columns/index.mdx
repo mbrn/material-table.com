@@ -1,0 +1,41 @@
+import { LiveCode } from 'libzy-lib';
+import MaterialTable from 'material-table';
+
+# Fixed Columns
+
+material-table has fixed columns feature both left and right. 
+
+## Usage
+
+To use fixed columns feature you should add fixedColumns object to options
+
+```jsx
+import MaterialTable from 'material-table';
+
+<MaterialTable
+    // other props
+    options={{
+      fixedColumns: {
+        left: 2, 
+        right: 0
+      }
+    }}
+/>
+```
+
+<br />
+
+## Hints 
+
+* TableLayout would be `fixed` if you add any fixed columns
+
+> You can not use fixed columns feature with detail panels, treedata or grouping for now.
+
+## Examples
+
+<LiveCode
+    code={require('!!raw-loader!./basic-fixed-columns.js').default}
+    scope={{ MaterialTable }}
+    title="Basic Fixed Columns Example"
+    description="To use fixed columns feature you should add fixedColumns object to options"
+/>
