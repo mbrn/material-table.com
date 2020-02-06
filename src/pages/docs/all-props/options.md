@@ -18,6 +18,7 @@ Options property could be given to component as `options` property. You can chan
 | exportCsv                  | func                   |               | Function to create a custom CSV file                                              |
 | filtering                  | boolean                | false         | Flag for filtering row                                                            |
 | filterCellStyle            | object                 |               | Filter cell style for all filter cells                                            |
+| fixedColumns               | object                 |               | Please check fixed columns examples                                               |
 | grouping                   | boolean                | true          | Flag for groupbar visibility                                                      |
 | header                     | boolean                | true          | Flag for header visibility                                                        |
 | headerStyle                | object                 |               | Header cell style for all headers                                                 |
@@ -36,12 +37,15 @@ Options property could be given to component as `options` property. You can chan
 | showSelectAllCheckbox      | boolean                | true          | Flag for showing select all checkbox                                              |
 | showTextRowsSelected       | boolean                | true          | Flag for showing selected rows text on toolbar                                    |
 | search                     | boolean                | true          | Flag for search feature                                                           |
+| searchText                 | string                 |               | Initialize search field before table was render                                   |
 | searchFieldAlignment       | string                 | 'right'       | Alignment for search text field in toolbar                                        |
 | searchFieldStyle           | object                 | {}            | Search field css style                                                            |
 | selection                  | boolean                | false         | Flag for selection feature                                                        |
 | selectionProps             | `object` or `func`     | {}            | Selection checkbox props                                                          |
 | sorting                    | boolean                | true          | Flag to activate or disable sorting feature of table                              |
+| tableLayout                | `auto` or `fixed`      | `auto`        | To make columns width algorithm auto or fixed                                     |
 | toolbar                    | boolean                | true          | Flag for toolbar                                                                  |
 | showTitle                  | boolean                | true          | Flag for title                                                                    |
 | toolbarButtonAlignment     | `left` or `right`      | 'right'       | Alignment for buttons in toolbar                                                  |
 | draggable                  | boolean                | true          | Flag for drag and drop headers                                                    |
+| thirdSortClick             | boolean                | true          | Flag to allow unsorted state on third header click                                |

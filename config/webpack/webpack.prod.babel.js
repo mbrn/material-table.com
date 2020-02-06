@@ -16,7 +16,8 @@ module.exports = {
         new CleanWebpackPlugin(),
         new CopyWebpackPlugin([
           { from: path.resolve(paths.publicPath, 'assets'), to: path.resolve(paths.outputPath, 'assets') },
-          { from: path.resolve(paths.root, 'CNAME'), to: paths.outputPath}	
+          { from: path.resolve(paths.root, 'CNAME'), to: paths.outputPath},
+          { from: path.resolve(paths.root, '.nojekyll'), to: paths.outputPath}	
         ]),
     ],
     devtool: 'source-map'

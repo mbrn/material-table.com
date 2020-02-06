@@ -11,6 +11,7 @@ const detailPanel = require('./src/pages/docs/features/detail-panel/index.mdx').
 const editable = require('./src/pages/docs/features/editable/index.mdx').default;
 const exportPage = require('./src/pages/docs/features/export/index.mdx').default;
 const filtering = require('./src/pages/docs/features/filtering/index.mdx').default;
+const fixedColumns = require('./src/pages/docs/features/fixed-columns/index.mdx').default;
 const grouping = require('./src/pages/docs/features/grouping/index.mdx').default;
 const localization = require('./src/pages/docs/features/localization/index.mdx').default;
 const remoteData = require('./src/pages/docs/features/remote-data/index.mdx').default;
@@ -85,6 +86,14 @@ module.exports = {
             text: 'material-table has inline filter component that lets user create custom filters on data',
             button: {
               path: '/docs/features/filtering',
+              text: 'Details and Examples'
+            }
+          },
+          {
+            title: 'Fixed Columns',
+            text: 'material-table has fixed columns feature both left and right',
+            button: {
+              path: '/docs/features/fixed-columns',
               text: 'Details and Examples'
             }
           },
@@ -211,6 +220,11 @@ module.exports = {
               text: 'Filtering',
               path: 'filtering',
               component: filtering
+            },
+            {
+              text: 'Fixed Columns',
+              path: 'fixed-columns',
+              component: fixedColumns
             },
             {
               text: 'Grouping',
