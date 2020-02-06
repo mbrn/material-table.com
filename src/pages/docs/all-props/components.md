@@ -11,7 +11,7 @@
 | Groupbar        | React.Element | MTableGroupbar    | FilterRow component                                                                       |
 | Header          | React.Element | MTableHeader      | Header component                                                                          |
 | OverlayLoading  | React.Element | CircularProgress  | Overlay loading component                                                                 |
-| Pagination      | React.Element | TablePagination   | Pagination component                                                                      |
+| Pagination      | React.Element | MTablePagination   | Pagination component                                                                      |
 | Row             | React.Element | MTableBodyRow     | Row component                                                                             |
 | Toolbar         | React.Element | MTableToolbar     | Toolbar component                                                                         |
 
