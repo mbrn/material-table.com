@@ -1,6 +1,6 @@
 {
 	"name": "material-table.com",
-	"version": "1.57.0",
+	"version": "1.58.0",
 	"scripts": {
 		"start": "cross-env NODE_ENV=development webpack-dev-server --open",
 		"build": "cross-env NODE_ENV=production webpack"
@@ -60,7 +60,7 @@
 		"codemirror": "^5.39.2",
 		"core-js": "3.0.1",
 		"libzy-lib": "0.5.2",
-		"material-table": "1.57.1",
+		"material-table": "1.58.0",
 		"react": "^16.8.6",
 		"react-codemirror2": "^5.1.0",
 		"react-dom": "^16.8.6"

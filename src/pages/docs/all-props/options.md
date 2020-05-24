@@ -6,6 +6,7 @@ Options property could be given to component as `options` property. You can chan
 | actionsColumnIndex         | number                 | 0             | Order of actions column                                                           |
 | addRowPosition             | `first` or `last`      | `last`        | Position of add row                                                               |
 | columnsButton              | boolean                | false         | Flag for columns button that controls which column could be rendered              |
+| cspNonce                   | string                 |               | cspNonce for react-beautiful-dnd context                                          |
 | debounceInterval           | number                 | 200           | debounce interval for search and filter                                           |
 | detailPanelColumnAlignment | `left` or `right`      | `left`        | Detail panel column alignment.                                                    |
 | detailPanelType            | `single` or `multiple` | `multiple`    | Detail panel visibility type.                                                     |
@@ -37,9 +38,11 @@ Options property could be given to component as `options` property. You can chan
 | showSelectAllCheckbox      | boolean                | true          | Flag for showing select all checkbox                                              |
 | showTextRowsSelected       | boolean                | true          | Flag for showing selected rows text on toolbar                                    |
 | search                     | boolean                | true          | Flag for search feature                                                           |
-| searchText                 | string                 |               | Initialize search field before table was render                                   |
+| searchAutoFocus            | boolean                | false         | Initialize search field focused                                                   |
 | searchFieldAlignment       | string                 | 'right'       | Alignment for search text field in toolbar                                        |
 | searchFieldStyle           | object                 | {}            | Search field css style                                                            |
+| searchFieldVariant         | string                 | 'standard'    | Search field variant                                                              |
+| searchText                 | string                 |               | Initialize search field before table was render                                   |
 | selection                  | boolean                | false         | Flag for selection feature                                                        |
 | selectionProps             | `object` or `func`     | {}            | Selection checkbox props                                                          |
 | sorting                    | boolean                | true          | Flag to activate or disable sorting feature of table                              |
