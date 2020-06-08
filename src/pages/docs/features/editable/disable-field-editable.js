@@ -1,7 +1,7 @@
 function DisableFieldEditable() {
   const { useState } = React;
 
-  const [columns, setColums] = useState([
+  const [columns, setColumns] = useState([
     { title: 'Name', field: 'name', editable: 'onUpdate' },
     { title: 'Surname', field: 'surname', editable: 'never' },
     { title: 'Birth Year', field: 'birthYear', type: 'numeric' },
