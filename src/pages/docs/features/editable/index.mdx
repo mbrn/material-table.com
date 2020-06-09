@@ -14,7 +14,11 @@ Every function must return a promise.
 <MaterialTable
     editable={{
         isEditable: rowData => rowData.name === "a", // only name(a) rows would be editable
-        isDeletable: rowData => rowData.name === "b", // only name(b) rows would be deletable
+        isEditHidden: rowData => rowData.name === "x",
+        isDeletable: rowData => rowData.name === "b", // only name(b) rows would be deletable,
+        isDeleteHidden: rowData => rowData.name === "y",
+        onRowAddCancelled: rowData => console.log("Row adding cancelled"),
+        onRowUpdateCancelled: rowData => console.log("Row editing cancelled"),
         onRowAdd: newData =>
             new Promise((resolve, reject) => {
                 setTimeout(() => {
