@@ -1,5 +1,6 @@
 | Field                   | Type                                         | Default   | Description                                                                                                   |
 |:------------------------|:---------------------------------------------|:----------|:--------------------------------------------------------------------------------------------------------------|
+| align               |  'center' or 'inherit' or 'justify' or 'left' or 'right';                               |           | The cell alignment          
 | cellStyle               | object or func                               |           | Cell cellStyle                                                                                                |
 | currencySetting         | object                                       |           | This field can be used when column type is currency.                                                          |
 | customFilterAndSearch   | func                                         |           | This field can be used for overriding filter and search algorithm                                             |
