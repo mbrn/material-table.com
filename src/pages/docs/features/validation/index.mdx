@@ -1,0 +1,46 @@
+import { LiveCode } from 'libzy-lib';
+import MaterialTable from 'material-table';
+import { createMuiTheme, MuiThemeProvider } from '@material-ui/core';
+
+# Valdation
+
+material-table supports cell validation during edit. 
+
+| Field                       | Type          |   |Description                             |  
+|:----------------------------|:--------------|:----------------------------------------|
+| column.validate            | func | The function to validate the current cell     |
+
+<br />
+
+Following returns are supported:
+
+| Return value                       | Type          |   |Description                             |  
+|:----------------------------|:--------------|:----------------------------------------|
+| boolean            | rowData => boolean | Return a Boolean to block save and show a red bar below that field|
+| string            | rowData => string | Return a string to block save, to show a red bar below that field and show an appropriate error message|
+| object            | rowData => { isValid: boolean; helperText: string } | Return an object to optional block save and show a red bar below that field. A helper text will also be displayed, in red if isValid is false|
+
+<br />
+
+## Examples
+
+<LiveCode
+    code={require('!!raw-loader!./validate-boolean.js').default}
+    scope={{ MaterialTable }}
+    title="Basic Boolean Validation Example"
+    description="In this example a basic Boolean for validation is returned"
+/>
+
+<LiveCode
+    code={require('!!raw-loader!./validate-string.js').default}
+    scope={{ MaterialTable }}
+    title="String Validation Example"
+    description="In this example a string for validation is returned"
+/>
+
+<LiveCode
+    code={require('!!raw-loader!./validate-obj.js').default}
+    scope={{ MaterialTable }}
+    title="Object Validation Example"
+    description="In this example an object for validation is returned"
+/>

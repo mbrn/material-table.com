@@ -1,4 +1,3 @@
-
 # Get Started
 
 [![Build Status](https://travis-ci.org/mbrn/material-table.svg?branch=master)](https://travis-ci.org/mbrn/material-table)
@@ -12,26 +11,27 @@ material-table is a simple and powerful Datatable for React based on Material-UI
 
 ## Key features
 
-- [Actions](/docs/features/actions)
-- [Component overriding](/docs/features/component-overriding)
-- [Custom column rendering](/docs/features/custom-column-rendering)
-- [Detail Panel](/docs/features/detail-panel)
-- [Editable](/docs/features/editable)
-- [Export](/docs/features/export)
-- [Filtering](/docs/features/filtering)
-- [Grouping](/docs/features/grouping)
-- [Localization](/docs/features/localization)
-- [Remote Data](/docs/features/remote-data)
-- [Search](/docs/features/search)
-- [Selection](/docs/features/selection)
-- [Sorting](/docs/features/sorting)
-- [Styling](/docs/features/styling)
-- [Tree Data](/docs/features/tree-data)
-- and more
+* [Actions](/docs/features/actions)
+* [Component overriding](/docs/features/component-overriding)
+* [Custom column rendering](/docs/features/custom-column-rendering)
+* [Detail Panel](/docs/features/detail-panel)
+* [Editable](/docs/features/editable)
+* [Export](/docs/features/export)
+* [Filtering](/docs/features/filtering)
+* [Grouping](/docs/features/grouping)
+* [Localization](/docs/features/localization)
+* [Remote Data](/docs/features/remote-data)
+* [Search](/docs/features/search)
+* [Selection](/docs/features/selection)
+* [Sorting](/docs/features/sorting)
+* [Styling](/docs/features/styling)
+* [Tree Data](/docs/features/tree-data)
+* [Validation](/docs/features/validation)
+* and more
 
 ## Usage
 
-```jsx
+``` jsx
 import React, { Component } from 'react'
 import ReactDOM from 'react-dom'
 import MaterialTable from 'material-table'
@@ -60,7 +60,7 @@ ReactDOM.render(<App />, document.getElementById('react-div'));
 
 ## Contributing
 
-We'd love to have your helping hand on `material-table`! See [CONTRIBUTING.md](https://github.com/mbrn/material-table/blob/master/.github/CONTRIBUTING.md) for more information on what we're looking for and how to get started.
+We'd love to have your helping hand on `material-table` ! See [CONTRIBUTING.md](https://github.com/mbrn/material-table/blob/master/.github/CONTRIBUTING.md) for more information on what we're looking for and how to get started.
 
 If you have any sort of doubt, idea or just want to talk about the project, feel free to join [our chat on Gitter](https://gitter.im/material-table/Lobby) :)
 
