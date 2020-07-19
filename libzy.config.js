@@ -20,6 +20,7 @@ const selection = require('./src/pages/docs/features/selection/index.mdx').defau
 const sorting = require('./src/pages/docs/features/sorting/index.mdx').default;
 const styling = require('./src/pages/docs/features/styling/index.mdx').default;
 const treeData = require('./src/pages/docs/features/tree-data/index.mdx').default;
+const validation = require('./src/pages/docs/features/validation/index.mdx').default;
 
 module.exports = {
   title: 'material-table',
@@ -161,6 +162,14 @@ module.exports = {
               text: 'Details and Examples'
             }
           },
+          {
+            title: 'Validation',
+            text: 'You can validate fields during edit/add',
+            button: {
+              path: '/docs/features/validation',
+              text: 'Details and Examples'
+            }
+          },
         ]
       }
     },
@@ -265,6 +274,11 @@ module.exports = {
               text: 'Tree Data',
               path: 'tree-data',
               component: treeData
+            },
+            {
+              text: 'Validation',
+              path: 'validation',
+              component: validation
             },
           ]
         },
