@@ -12,7 +12,7 @@
 | dateSetting             | { locale: string}                            |           | The locale used to format the displayed date/time                                                             |
 | disableClick            | boolean                                      | false     | Disable the 'onRowClick' event for this cell                                                                  |
 | editable                | 'always' 'never' 'onUpdate' 'onAdd'          | 'always'  | Editable custom component                                                                                     |
-| editComponent           | func                                 |           | Editable custom component                                                                                     |
+| editComponent           | func                                         |           | Editable custom component                                                                                     |
 | emptyValue              | string or ReactElement or () => ReactElement |           | When data is empty or undefined, string value, ReactElement or function result can be set as default value    |
 | export                  | boolean                                      | true      | Flag for make column exportable or not                                                                        |
 | field                   | string                                       |           | Field name of data row                                                                                        |

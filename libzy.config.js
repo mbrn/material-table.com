@@ -24,7 +24,7 @@ const validation = require('./src/pages/docs/features/validation/index.mdx').def
 
 module.exports = {
   title: 'material-table',
-  subTitle: 'React data table component that based on material-ui',
+  subTitle: 'React data table component that is based on material-ui',
   logoImage: '/assets/logo.svg',
   github: 'https://github.com/mbrn/material-table',
   githubShort: 'mbrn/material-table',

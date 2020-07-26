@@ -4,21 +4,24 @@ import MaterialTable from 'material-table';
 # Editable
 
 material-table has inline editing feature that lets users to add, remove, update new rows.
+Also you can use `cellEditable` feature to let users change only data of a cell.
 
 ## Usage
 
-To make table editable, you should set `editable` prop that has `onRowAdd`, `onRowUpdate`, `onRowDelete`  functions to manipulate data. 
-Every function must return a promise. 
+### Row Editing
+
+To make table rows editable, you should set `editable` prop that has `onRowAdd`, `onRowUpdate`, `onRowDelete` functions to manipulate data.
+Every function must return a promise.
 
 ```jsx
 <MaterialTable
     editable={{
-        isEditable: rowData => rowData.name === "a", // only name(a) rows would be editable
-        isEditHidden: rowData => rowData.name === "x",
-        isDeletable: rowData => rowData.name === "b", // only name(b) rows would be deletable,
-        isDeleteHidden: rowData => rowData.name === "y",
-        onRowAddCancelled: rowData => console.log("Row adding cancelled"),
-        onRowUpdateCancelled: rowData => console.log("Row editing cancelled"),
+        isEditable: rowData => rowData.name === 'a', // only name(a) rows would be editable
+        isEditHidden: rowData => rowData.name === 'x',
+        isDeletable: rowData => rowData.name === 'b', // only name(b) rows would be deletable,
+        isDeleteHidden: rowData => rowData.name === 'y',
+        onRowAddCancelled: rowData => console.log('Row adding cancelled'),
+        onRowUpdateCancelled: rowData => console.log('Row editing cancelled'),
         onRowAdd: newData =>
             new Promise((resolve, reject) => {
                 setTimeout(() => {
@@ -45,20 +48,43 @@ Every function must return a promise.
                     const index = oldData.tableData.id;
                     dataDelete.splice(index, 1);
                     setData([...dataDelete]);
-                    
+
                     resolve();
                 }, 1000);
             })
     }}
 />
 ```
+
 <br />
 
-## Hints 
+### Cell Editing
 
-* You can use `column.editComponent` to override edit component for a column.
-* You can use `column.initialEditValue` to set initial value on addding new row.
-* You can call `reject()` to keep open row editable. 
+To make table cells editable, you should set `cellEditable` prop that has `onCellEditApproved` function to manipulate data.
+`onCellEditApproved` function must return a promise.
+
+```jsx
+<MaterialTable
+    cellEditable={{
+        cellStyle: {},
+        onCellEditApproved: (newValue, oldValue, rowData, columnDef) => {
+            return new Promise((resolve, reject) => {
+                console.log('newValue: ' + newValue);
+                setTimeout(resolve, 4000);
+            });
+        }
+    }}
+/>
+```
+
+<br />
+
+## Hints
+
+- You can use `column.editComponent` to override edit component for a column.
+- You can use `column.initialEditValue` to set initial value on addding new row.
+- You can call `reject()` to keep open row editable.
+- You can use `column.editable` to make a column cells editable or non-editable
 
 ## Examples
 
@@ -83,4 +109,9 @@ Every function must return a promise.
     description="A simple editable implementation with a custom edit component for name field"
 />
 
-
+<LiveCode
+    code={require('!!raw-loader!./cell-editable.js').default}
+    scope={{ MaterialTable }}
+    title="Cell Editable Example"
+    description="A simple cell editable implementation"
+/>
