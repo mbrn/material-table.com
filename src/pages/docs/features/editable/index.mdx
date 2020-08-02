@@ -11,7 +11,7 @@ Also you can use `cellEditable` feature to let users change only data of a cell.
 ### Row Editing
 
 To make table rows editable, you should set `editable` prop that has `onRowAdd`, `onRowUpdate`, `onRowDelete` functions to manipulate data.
-Every function must return a promise.
+Every function must return a promise. Also you can make bulk update available by setting `editable.onBulkUpdate`.
 
 ```jsx
 <MaterialTable
@@ -20,6 +20,14 @@ Every function must return a promise.
         isEditHidden: rowData => rowData.name === 'x',
         isDeletable: rowData => rowData.name === 'b', // only name(b) rows would be deletable,
         isDeleteHidden: rowData => rowData.name === 'y',
+        onBulkUpdate: changes => 
+            new Promise((resolve, reject) => {
+                setTimeout(() => {
+                    /* setData([...data, newData]); */
+
+                    resolve();
+                }, 1000);
+            }),
         onRowAddCancelled: rowData => console.log('Row adding cancelled'),
         onRowUpdateCancelled: rowData => console.log('Row editing cancelled'),
         onRowAdd: newData =>
@@ -100,6 +108,13 @@ To make table cells editable, you should set `cellEditable` prop that has `onCel
     scope={{ MaterialTable }}
     title="Disable Field Editable Example"
     description="A simple editable implementation with a reaonly name column"
+/>
+
+<LiveCode
+    code={require('!!raw-loader!./bulk-edit.js').default}
+    scope={{ MaterialTable }}
+    title="Bulk Edit Example"
+    description="A simple bulk edit implementation"
 />
 
 <LiveCode
