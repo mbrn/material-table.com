@@ -1,7 +1,7 @@
-function StringValidation() {
+function ObjectValidation() {
   return (
     <MaterialTable
-      title="String Validation Preview"
+      title="Object Validation Preview"
       columns={[
         {
           title: 'Name', field: 'name', validate: rowData => rowData.name === '' ? { isValid: false, helperText: 'Name cannot be empty' } : true,
