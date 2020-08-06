@@ -7,6 +7,7 @@ Options property could be given to component as `options` property. You can chan
 | addRowPosition             | `first` or `last`      | `last`        | Position of add row                                                               |
 | columnsButton              | boolean                | false         | Flag for columns button that controls which column could be rendered              |
 | cspNonce                   | string                 |               | cspNonce for react-beautiful-dnd context                                          |
+| defaultExpanded            | boolean or func        | false         | Flag for whether row detail panels should default to expanded                     |
 | debounceInterval           | number                 | 200           | debounce interval for search and filter                                           |
 | detailPanelColumnAlignment | `left` or `right`      | `left`        | Detail panel column alignment.                                                    |
 | detailPanelType            | `single` or `multiple` | `multiple`    | Detail panel visibility type.                                                     |
