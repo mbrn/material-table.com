@@ -33,3 +33,4 @@
 | sorting                 | boolean                                      | true      | Flag to activate or disable sorting feature of column                                                         |
 | title                   | string                                       |           | Header text                                                                                                   |
 | type                    | string                                       |           | Data type: 'boolean', 'numeric', 'date', 'datetime', 'time', 'currency'                                       |
+| width                   | string                                       |           | Width of column that overrides Material Table's default |
