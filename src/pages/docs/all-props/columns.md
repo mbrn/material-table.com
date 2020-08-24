@@ -9,7 +9,7 @@
 | defaultGroupOrder       | number                                       |           | Default grouped column by order                                                                               |
 | defaultGroupSort        | 'asc' or 'desc'                              | 'asc'     | Default grouped sort direction                                                                                |
 | defaultSort             | 'asc' or 'desc'                              |           | Sorting direction: 'asc', 'desc'                                                                              |
-| dateSetting             | { locale: string}                            |           | The locale used to format the displayed date/time                                                             |
+| dateSetting             | { locale: string, format: string }                            |           | The locale used to format the displayed date/time. Also the date format for the datepicker (defaults to "dd.MM.yyyy").                                                             |
 | disableClick            | boolean                                      | false     | Disable the 'onRowClick' event for this cell                                                                  |
 | editable                | 'always' 'never' 'onUpdate' 'onAdd'          | 'always'  | Editable custom component                                                                                     |
 | editComponent           | func                                         |           | Editable custom component                                                                                     |
