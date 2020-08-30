@@ -4,6 +4,7 @@ Localization settings could be used to change/translate default texts of datatab
 |:----------------------------------|:-------|:--------------------------|:-------------------------------------------------|
 | body                              | object | {}                        | Key value pair for localize body component       |
 | body.emptyDataSourceMessage       | string | No records to display     |                                                  |
+| body.bulkEditTooltip              | string | Edit All                  |                                                  |
 | body.addTooltip                   | string | Add                       |                                                  |
 | body.deleteTooltip                | string | Delete                    |                                                  |
 | body.editTooltip                  | string | Edit                      |                                                  |
