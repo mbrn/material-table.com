@@ -18,6 +18,7 @@ function GermanTable() {
       ]}        
       localization={{
         body: {
+          bulkEditTooltip: "Alle bearbeiten",
           emptyDataSourceMessage: 'Keine Einträge',
           addTooltip: 'Hinzufügen',
           deleteTooltip: 'Löschen',
