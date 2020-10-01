@@ -21,6 +21,7 @@ Options property could be given to component as `options` property. You can chan
 | filterCellStyle            | object                 |               | Filter cell style for all filter cells                                            |
 | fixedColumns               | object                 |               | Please check fixed columns examples                                               |
 | grouping                   | boolean                | true          | Flag for groupbar visibility                                                      |
+| showGroupCount             | boolean                | false         | Flag for grouping count                                                           |
 | header                     | boolean                | true          | Flag for header visibility                                                        |
 | headerStyle                | object                 |               | Header cell style for all headers                                                 |
 | loadingType                | `overlay` or `linear`  | `overlay`     | Loading animation type                                                            |
